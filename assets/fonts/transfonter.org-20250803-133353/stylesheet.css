@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-BlackItalic.woff2') format('woff2'),
+        url('CentraNo1TRIAL-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Bold.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Black.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Bold.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Black.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-BlackItalic.woff2') format('woff2'),
+        url('CentraNo1TRIAL-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Extrabold.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Extrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Book.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-BookItalic.woff2') format('woff2'),
+        url('CentraNo1TRIAL-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-BoldItalic.woff2') format('woff2'),
+        url('CentraNo1TRIAL-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-ExtraboldItalic.woff2') format('woff2'),
+        url('CentraNo1TRIAL-ExtraboldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Extrabold.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Extrabold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-BoldItalic.woff2') format('woff2'),
+        url('CentraNo1TRIAL-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-BookItalic.woff2') format('woff2'),
+        url('CentraNo1TRIAL-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Book.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Light.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL Hairline';
+    src: url('CentraNo1TRIAL-Hairline.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Hairline.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-HairlineItalic.woff2') format('woff2'),
+        url('CentraNo1TRIAL-HairlineItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Hairline.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Hairline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL Hairline';
+    src: url('CentraNo1TRIAL-HairlineItalic.woff2') format('woff2'),
+        url('CentraNo1TRIAL-HairlineItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-ExtraboldItalic.woff2') format('woff2'),
+        url('CentraNo1TRIAL-ExtraboldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-LightItalic.woff2') format('woff2'),
+        url('CentraNo1TRIAL-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Light.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Medium.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-MediumItalic.woff2') format('woff2'),
+        url('CentraNo1TRIAL-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-MediumItalic.woff2') format('woff2'),
+        url('CentraNo1TRIAL-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Thin.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Thin.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-Medium.woff2') format('woff2'),
+        url('CentraNo1TRIAL-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Centra No1 TRIAL';
+    src: url('CentraNo1TRIAL-LightItalic.woff2') format('woff2'),
+        url('CentraNo1TRIAL-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+

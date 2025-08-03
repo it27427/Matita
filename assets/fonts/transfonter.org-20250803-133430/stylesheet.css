@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'IvyMode';
+    src: url('IvyMode-Bold.woff2') format('woff2'),
+        url('IvyMode-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IvyMode';
+    src: url('IvyMode-Regular.woff2') format('woff2'),
+        url('IvyMode-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IvyMode';
+    src: url('IvyMode-LightItalic.woff2') format('woff2'),
+        url('IvyMode-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IvyMode';
+    src: url('IvyMode-Light.woff2') format('woff2'),
+        url('IvyMode-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IvyMode';
+    src: url('IvyMode-Italic.woff2') format('woff2'),
+        url('IvyMode-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IvyMode';
+    src: url('IvyMode-BoldItalic.woff2') format('woff2'),
+        url('IvyMode-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IvyMode';
+    src: url('IvyMode-SemiBold.woff2') format('woff2'),
+        url('IvyMode-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IvyMode';
+    src: url('IvyMode-SemiBoldItalic.woff2') format('woff2'),
+        url('IvyMode-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IvyMode';
+    src: url('IvyMode-Thin.woff2') format('woff2'),
+        url('IvyMode-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IvyMode';
+    src: url('IvyMode-ThinItalic.woff2') format('woff2'),
+        url('IvyMode-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
