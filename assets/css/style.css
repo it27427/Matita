@@ -1,0 +1,287 @@
+/* Centra No1 font-face definitions */
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-Black.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-BlackItalic.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-ExtraboldItalic.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-ExtraboldItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-Extrabold.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-Extrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-Bold.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-BoldItalic.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-Medium.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-MediumItalic.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-Light.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-LightItalic.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-Book.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-Book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-BookItalic.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-BookItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-Hairline.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-Hairline.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-HairlineItalic.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-HairlineItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-Thin.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Centra No1';
+  src: url('../fonts/CentraNo1/CentraNo1-ThinItalic.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* IvyMode font-face definitions */
+@font-face {
+  font-family: 'IvyMode';
+  src: url('../fonts/IvyMode/IvyMode-Bold.woff2') format('woff2'),
+    url('../fonts/IvyMode/IvyMode-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode';
+  src: url('../fonts/IvyMode/IvyMode-BoldItalic.woff2') format('woff2'),
+    url('../fonts/IvyMode/IvyMode-BoldItalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode';
+  src: url('../fonts/IvyMode/IvyMode-Regular.woff2') format('woff2'),
+    url('../fonts/IvyMode/IvyMode-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode';
+  src: url('../fonts/IvyMode/IvyMode-Italic.woff2') format('woff2'),
+    url('../fonts/IvyMode/IvyMode-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode';
+  src: url('../fonts/IvyMode/IvyMode-Light.woff2') format('woff2'),
+    url('../fonts/IvyMode/IvyMode-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode';
+  src: url('../fonts/IvyMode/IvyMode-LightItalic.woff2') format('woff2'),
+    url('../fonts/IvyMode/IvyMode-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode';
+  src: url('../fonts/IvyMode/IvyMode-SemiBold.woff2') format('woff2'),
+    url('../fonts/IvyMode/IvyMode-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode';
+  src: url('../fonts/IvyMode/IvyMode-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/IvyMode/IvyMode-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode';
+  src: url('../fonts/IvyMode/IvyMode-Thin.woff2') format('woff2'),
+    url('../fonts/IvyMode/IvyMode-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IvyMode';
+  src: url('../fonts/IvyMode/IvyMode-ThinItalic.woff2') format('woff2'),
+    url('../fonts/IvyMode/IvyMode-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* VARIABLES definitions */
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+  --bg-light: #EDECE8;
+  --text-primary: #121110;
+  --theme-primary: #c65624;
+  --bg-newsletter: #2d4d3a;
+
+  --font-body: 'Centra No1', sans-serif;
+  --font-heading: 'IvyMode', sans-serif;
+
+  --s10: 10px;
+  --s11: 11px;
+  --s12: 12px;
+  --s14: 14px;
+  --s16: 16px;
+  --s18: 18px;
+  --s24: 24px;
+  --s30: 30px;
+  --s32: 32px;
+  --s36: 36px;
+  --s40: 40px;
+  --s44: 44px;
+  --s48: 48px;
+  --s54: 54px;
+  --s60: 60px;
+  --s64: 64px;
+  --s72: 72px;
+  --s80: 80px;
+}
+
+/* RESETTING */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  font-size: var(--s16);
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  margin: 0;
+}
