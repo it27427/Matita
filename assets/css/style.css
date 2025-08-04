@@ -1,55 +1,10 @@
 /* Centra No1 font-face definitions */
 @font-face {
   font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-Black.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-Black.woff') format('woff');
-  font-weight: 900;
+  src: url('../fonts/CentraNo1/CentraNo1-Light.woff2') format('woff2'),
+    url('../fonts/CentraNo1/CentraNo1-Light.woff') format('woff');
+  font-weight: 300;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-BlackItalic.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-BlackItalic.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-ExtraboldItalic.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-ExtraboldItalic.woff') format('woff');
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-Extrabold.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-Extrabold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-Bold.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-BoldItalic.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-BoldItalic.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
   font-display: swap;
 }
 
@@ -62,84 +17,13 @@
   font-display: swap;
 }
 
+/* Centra No1 BOOK font-face definitions */
 @font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-MediumItalic.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-MediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-Light.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-LightItalic.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-Book.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-Book.woff') format('woff');
+  font-family: 'CentraNo1 Book';
+  src: url('../fonts/CentraNo1-Book/CentraNo1-Book.woff2') format('woff2'),
+    url('../fonts/CentraNo1-Book/CentraNo1-Book.woff') format('woff');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-BookItalic.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-BookItalic.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-Hairline.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-Hairline.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-HairlineItalic.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-HairlineItalic.woff') format('woff');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-Thin.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-Thin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-ThinItalic.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-ThinItalic.woff') format('woff');
-  font-weight: 100;
-  font-style: italic;
   font-display: swap;
 }
 
@@ -245,12 +129,14 @@
 
   --font-body: 'Centra No1', sans-serif;
   --font-heading: 'IvyMode', sans-serif;
+  --font-book: 'CentraNo1 Book', sans-serif;
 
   --s10: 10px;
   --s11: 11px;
   --s12: 12px;
   --s14: 14px;
   --s16: 16px;
+  --s17: 17px;
   --s18: 18px;
   --s24: 24px;
   --s30: 30px;
@@ -268,12 +154,13 @@
 
 /* RESETTING */
 body {
+  background-color: var(--white);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--s17);
+  line-height: 1.5;
   margin: 0;
   padding: 0;
-  font-family: var(--font-body);
-  font-size: var(--s16);
-  line-height: 1.5;
-  color: var(--text-primary);
 }
 
 h1,
@@ -284,4 +171,10 @@ h5,
 h6 {
   font-family: var(--font-heading);
   margin: 0;
+}
+
+a,
+button,
+span {
+  font-family: var(--font-book);
 }
