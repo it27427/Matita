@@ -29,14 +29,80 @@
 
   <!-- HEADER-SECTION-START -->
   <header class="header">
-    <h1>
-      <i class="fa-brands fa-facebook"></i>
-    </h1>
+    <div class="container">
+      <nav class="d-flex align-items-center justify-content-between">
+        <!-- BRAND-LOGO -->
+        <a href="index.html" class="brand-logo-link">
+          <img src="assets/images/logo/logo.png" alt="BRAND-LOGO" class="brand-logo">
+        </a>
+
+        <!-- NAVIGATION-MENU -->
+        <div class="d-none d-lg-block">
+          <ul class="header-menu d-flex align-items-center gap-4">
+            <li class="menu-item">
+              <a href="rooms-and-swites.html" class="menu-link">Rooms & Suites</a>
+            </li>
+            <li class="menu-item">
+              <a href="spa.html" class="menu-link">Spa</a>
+            </li>
+            <li class="menu-item">
+              <a href="restaurant.html" class="menu-link">Restaurant</a>
+            </li>
+            <li class="menu-item">
+              <a href="contact.html" class="menu-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <!-- RIGHT-MENU -->
+        <div class="d-none d-lg-block">
+          <div class="d-flex align-items-center gap-4">
+            <select id="language-select" class="language-select">
+              <option value="En">En</option>
+              <option value="Esp">Esp</option>
+              <option value="Fr">Fr</option>
+            </select>
+
+            <a href="#" class="btn-cta btn-white">Book Now</a>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
   <!-- HEADER-SECTION-END -->
 
   <!-- HOME-HERO-AREA-START -->
-  <section class="home-hero-area"></section>
+  <section class="home-hero-area" style="background: url(assets/images/hero/hero-homepage.jpg) center center/cover;">
+    <div class="container">
+      <!-- HERO-HEADLINE-WRAPPER -->
+      <div class="hero-headline-wrapper">
+        <h1 class="hero-headline">Find your nature self</h1>
+        <h2 class="hero-subtitle">Matita is a wellness resort in the green hills of Bangladesh</h2>
+      </div>
+
+      <div class="weather">
+        <p class="d-flex align-items-center gap-1">
+          <i class="fa-regular fa-clock"></i>
+          <span id="time">Loading time...</span>
+        </p>
+        <p class="d-flex align-items-center gap-1">
+          <i class="fa-regular fa-cloud"></i>
+          <span id="weather">Loading weather...</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="booking-area">
+      <div class="container">
+        <form class="booking-form">
+
+        </form>
+      </div>
+    </div>
+
+    <div class="overlay"></div>
+  </section>
   <!-- HOME-HERO-AREA-END -->
 
   <!-- NEWSLETTER-SECTION-START -->
@@ -53,6 +119,8 @@
   <script src="assets/js/swiper-bundle.min.js"></script>
   <!-- PRELOADER-JS -->
   <script src="assets/js/pageloader.js"></script>
+  <!-- WEATHER-JS -->
+  <script src="assets/js/weather.js"></script>
 
   <!-- GSAP -->
   <script src="assets/js/gsap/gsap.min.js"></script>
