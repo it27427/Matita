@@ -133,6 +133,9 @@
 
   --transition: all 500ms ease-in-out;
 
+  --s4: 4px;
+  --s5: 5px;
+  --s8: 8px;
   --s10: 10px;
   --s11: 11px;
   --s12: 12px;
@@ -379,7 +382,7 @@ img {
 .weather {
   display: flex;
   flex-direction: column;
-  gap: var(--s10);
+  gap: var(--s4);
   position: relative;
   z-index: 2;
 }
@@ -387,7 +390,7 @@ img {
 .weather p {
   color: var(--white);
   font-family: var(--font-body);
-  font-size: var(--s15);
+  font-size: var(--s14);
   font-weight: 300;
   letter-spacing: 0.3px;
 }
