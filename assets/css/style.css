@@ -385,6 +385,7 @@ img {
   gap: var(--s4);
   position: relative;
   z-index: 2;
+  margin-block-start: -2rem;
 }
 
 .weather p {
@@ -402,6 +403,21 @@ img {
 
 .weather p span {
   font: inherit;
+}
+
+/* BOOKING-AREA */
+.booking-area {
+  background-color: var(--text-primary);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.booking-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .overlay {

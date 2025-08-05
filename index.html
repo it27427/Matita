@@ -10,6 +10,8 @@
   <link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
   <!-- FONTAWESOME-CSS -->
   <link rel="stylesheet" href="assets/css/all.min.css">
+  <!-- DATEPICKER-CSS -->
+  <link rel="stylesheet" href="assets/css/datepicker.min.css">
   <!-- BOOTSTRAP-CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <!-- SWIPER-CSS -->
@@ -96,7 +98,45 @@
     <div class="booking-area">
       <div class="container">
         <form class="booking-form">
+          <div class="">
+            <label for="packages">Packages</label>
+            <select id="packages" class="">
+              <option value="Day">Day</option>
+              <option value="Evening">Evening</option>
+              <option value="Night">Night</option>
+            </select>
+          </div>
 
+          <div class="">
+            <label for="check-in">Check-in</label>
+            <input type="text" name="check-in" id="check-in" class="datepicker" placeholder="Select Check-in Date">
+          </div>
+
+          <div class="">
+            <label for="check-out">Check-out</label>
+            <input type="text" name="check-out" id="check-out" class="datepicker" placeholder="Select Check-out Date">
+          </div>
+
+          <div class="">
+            <label for="adult-guests">Adults</label>
+            <select id="adult-guests" class="">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+
+          <div class="">
+            <label for="children-guests">Children</label>
+            <select id="children-guests" class="">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-cta btn-primary">Book Now</button>
         </form>
       </div>
     </div>
@@ -121,6 +161,9 @@
   <script src="assets/js/pageloader.js"></script>
   <!-- WEATHER-JS -->
   <script src="assets/js/weather.js"></script>
+  <!-- DATEPICKER-JS -->
+  <script src="assets/js/datepicker.min.js"></script>
+  <script src="assets/js/datepicker.js"></script>
 
   <!-- GSAP -->
   <script src="assets/js/gsap/gsap.min.js"></script>
