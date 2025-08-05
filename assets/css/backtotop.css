@@ -1,0 +1,38 @@
+.up-btn {
+  width: 3rem;
+  height: 3rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  opacity: 0.75;
+  background: #333;
+  border: 0;
+  cursor: pointer;
+  position: fixed;
+  z-index: 2000;
+  transition: all 0.4s ease-in-out;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+}
+
+.up-btn.up-btn__hide {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+}
+
+.up-btn:hover {
+  opacity: 1;
+}
+
+.up-btn.up-btn_circle {
+  border-radius: 50%;
+}
+
+.up-btn__img {
+  width: 100%;
+  max-width: 100%;
+}

@@ -143,13 +143,19 @@
   --s32: 32px;
   --s36: 36px;
   --s40: 40px;
+  --s42: 42px;
   --s44: 44px;
+  --s45: 45px;
   --s48: 48px;
+  --s52: 52px;
   --s54: 54px;
   --s60: 60px;
   --s64: 64px;
   --s72: 72px;
+  --s76: 76px;
   --s80: 80px;
+  --s100: 100px;
+  --s200: 200px;
 }
 
 /* RESETTING */
@@ -177,4 +183,37 @@ a,
 button,
 span {
   font-family: var(--font-book);
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pageloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-newsletter);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadericon {
+  width: var(--s200);
+  height: var(--s200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loaderimg {
+  object-fit: cover;
 }
