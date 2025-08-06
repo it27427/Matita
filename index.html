@@ -1,174 +1,204 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- PAGE-TITLE -->
+    <title>Matita</title>
+    <!-- FAVICON-ICON -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- FONTAWESOME-CSS -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- DATEPICKER-CSS -->
+    <link rel="stylesheet" href="assets/css/datepicker.min.css" />
+    <!-- BOOTSTRAP-CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- SWIPER-CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- CUSTOM-CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- PAGE-TITLE -->
-  <title>Matita</title>
-  <!-- FAVICON-ICON -->
-  <link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="image/x-icon">
-  <!-- FONTAWESOME-CSS -->
-  <link rel="stylesheet" href="assets/css/all.min.css">
-  <!-- DATEPICKER-CSS -->
-  <link rel="stylesheet" href="assets/css/datepicker.min.css">
-  <!-- BOOTSTRAP-CSS -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <!-- SWIPER-CSS -->
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-  <!-- CUSTOM-CSS -->
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-
-<body>
-  <!-- PAGE-LOADER-START -->
-  <div class="pageloader" id="preloader">
-    <figure class="loadericon">
-      <img src="assets/images/logo/logo.png" alt="LOADER-ICON" class="loaderimg">
-    </figure>
-  </div>
-  <!-- PAGE-LOADER-END -->
-
-  <!-- HEADER-SECTION-START -->
-  <header class="header">
-    <div class="container">
-      <nav class="d-flex align-items-center justify-content-between">
-        <!-- BRAND-LOGO -->
-        <a href="index.html" class="brand-logo-link">
-          <img src="assets/images/logo/logo.png" alt="BRAND-LOGO" class="brand-logo">
-        </a>
-
-        <!-- NAVIGATION-MENU -->
-        <div class="d-none d-lg-block">
-          <ul class="header-menu d-flex align-items-center gap-5">
-            <li class="menu-item">
-              <a href="rooms-and-swites.html" class="menu-link">Rooms & Suites</a>
-            </li>
-            <li class="menu-item">
-              <a href="spa.html" class="menu-link">Spa</a>
-            </li>
-            <li class="menu-item">
-              <a href="restaurant.html" class="menu-link">Restaurant</a>
-            </li>
-            <li class="menu-item">
-              <a href="contact.html" class="menu-link">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-
-        <!-- RIGHT-MENU -->
-        <div class="d-none d-lg-block">
-          <div class="d-flex align-items-center gap-4">
-            <select id="language-select" class="language-select">
-              <option value="En">En</option>
-              <option value="Esp">Esp</option>
-              <option value="Fr">Fr</option>
-            </select>
-
-            <a href="#" class="btn-cta btn-white">Book Now</a>
-          </div>
-        </div>
-      </nav>
+  <body>
+    <!-- PAGE-LOADER-START -->
+    <div class="pageloader" id="preloader">
+      <figure class="loadericon">
+        <img
+          src="assets/images/logo/logo.png"
+          alt="LOADER-ICON"
+          class="loaderimg"
+        />
+      </figure>
     </div>
-  </header>
-  <!-- HEADER-SECTION-END -->
+    <!-- PAGE-LOADER-END -->
 
-  <!-- HOME-HERO-AREA-START -->
-  <section class="home-hero-area" style="background: url(assets/images/hero/home-hero.jpeg) center center/cover;">
-    <div class="container">
-      <!-- HERO-HEADLINE-WRAPPER -->
-      <div class="hero-headline-wrapper">
-        <h1 class="hero-headline">Find your nature self</h1>
-        <h2 class="hero-subtitle">Matita is a wellness resort in the green hills of Bangladesh</h2>
-      </div>
-
-      <div class="weather">
-        <p class="d-flex align-items-center gap-1">
-          <i class="fa-regular fa-clock"></i>
-          <span id="time">Loading time...</span>
-        </p>
-        <p class="d-flex align-items-center gap-1">
-          <i class="fa-regular fa-cloud"></i>
-          <span id="weather">Loading weather...</span>
-        </p>
-      </div>
-    </div>
-
-    <div class="booking-area">
+    <!-- HEADER-SECTION-START -->
+    <header class="header">
       <div class="container">
-        <form class="booking-form">
-          <div class="">
-            <label for="packages">Packages</label>
-            <select id="packages" class="">
-              <option value="Day">Day</option>
-              <option value="Evening">Evening</option>
-              <option value="Night">Night</option>
-            </select>
+        <nav class="d-flex align-items-center justify-content-between">
+          <!-- BRAND-LOGO -->
+          <a href="index.html" class="brand-logo-link">
+            <img
+              src="assets/images/logo/logo.png"
+              alt="BRAND-LOGO"
+              class="brand-logo"
+            />
+          </a>
+
+          <!-- NAVIGATION-MENU -->
+          <div class="d-none d-lg-block">
+            <ul class="header-menu d-flex align-items-center gap-5">
+              <li class="menu-item">
+                <a href="rooms-and-swites.html" class="menu-link">
+                  Rooms & Suites
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="spa.html" class="menu-link"> Spa </a>
+              </li>
+              <li class="menu-item">
+                <a href="restaurant.html" class="menu-link"> Restaurant </a>
+              </li>
+              <li class="menu-item">
+                <a href="contact.html" class="menu-link"> Contact </a>
+              </li>
+            </ul>
           </div>
 
-          <div class="">
-            <label for="check-in">Check-in</label>
-            <input type="text" name="check-in" id="check-in" class="datepicker" placeholder="Select Check-in Date">
-          </div>
+          <!-- RIGHT-MENU -->
+          <div class="d-none d-lg-block">
+            <div class="d-flex align-items-center gap-4">
+              <select id="language-select" class="language-select">
+                <option value="En">En</option>
+                <option value="Esp">Esp</option>
+                <option value="Fr">Fr</option>
+              </select>
 
-          <div class="">
-            <label for="check-out">Check-out</label>
-            <input type="text" name="check-out" id="check-out" class="datepicker" placeholder="Select Check-out Date">
+              <a href="#" class="btn-cta btn-white">Book Now</a>
+            </div>
           </div>
-
-          <div class="">
-            <label for="adult-guests">Adults</label>
-            <select id="adult-guests" class="">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-
-          <div class="">
-            <label for="children-guests">Children</label>
-            <select id="children-guests" class="">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-          <button type="submit" class="btn-cta btn-primary">Book Now</button>
-        </form>
+        </nav>
       </div>
-    </div>
+    </header>
+    <!-- HEADER-SECTION-END -->
 
-    <div class="overlay"></div>
-  </section>
-  <!-- HOME-HERO-AREA-END -->
+    <!-- HOME-HERO-AREA-START -->
+    <section
+      class="home-hero-area"
+      style="
+        background: url(assets/images/hero/home-hero.jpeg) center center/cover;
+      "
+    >
+      <div class="container">
+        <!-- HERO-HEADLINE-WRAPPER -->
+        <div class="hero-headline-wrapper">
+          <h1 class="hero-headline">Find your nature self</h1>
+          <h2 class="hero-subtitle">
+            Matita is a wellness resort in the green hills of Bangladesh
+          </h2>
+        </div>
 
-  <!-- NEWSLETTER-SECTION-START -->
-  <section class="newsletter"></section>
-  <!-- NEWSLETTER-SECTION-END -->
+        <div class="weather">
+          <p class="d-flex align-items-center gap-1">
+            <i class="fa-regular fa-clock"></i>
+            <span id="time">Loading time...</span>
+          </p>
+          <p class="d-flex align-items-center gap-1">
+            <i class="fa-regular fa-cloud"></i>
+            <span id="weather">Loading weather...</span>
+          </p>
+        </div>
+      </div>
 
-  <!-- FOOTER-SECTION-START -->
-  <footer class="footer"></footer>
-  <!-- FOOTER-SECTION-END -->
+      <div class="booking-area">
+        <div class="container">
+          <form class="booking-form">
+            <div class="form-info">
+              <label for="packages">Packages</label>
+              <select id="packages" class="packages">
+                <option value="Day">Day</option>
+                <option value="Evening">Evening</option>
+                <option value="Night">Night</option>
+              </select>
+            </div>
 
-  <!-- BOOTSTRAP-JS -->
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <!-- SWIPER-JS -->
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <!-- PRELOADER-JS -->
-  <script src="assets/js/pageloader.js"></script>
-  <!-- WEATHER-JS -->
-  <script src="assets/js/weather.js"></script>
-  <!-- DATEPICKER-JS -->
-  <script src="assets/js/datepicker.min.js"></script>
-  <script src="assets/js/datepicker.js"></script>
+            <div class="form-[]">
+              <label for="check-in">Check-in</label>
+              <input
+                type="text"
+                name="check-in"
+                id="check-in"
+                class="datepicker"
+                placeholder="Select Check-in Date"
+              />
+            </div>
 
-  <!-- GSAP -->
-  <script src="assets/js/gsap/gsap.min.js"></script>
-  <!-- MAIN-JS -->
-  <script src="assets/js/main.js"></script>
-</body>
+            <div class="">
+              <label for="check-out">Check-out</label>
+              <input
+                type="text"
+                name="check-out"
+                id="check-out"
+                class="datepicker"
+                placeholder="Select Check-out Date"
+              />
+            </div>
 
+            <div class="">
+              <label for="adult-guests">Adults</label>
+              <select id="adult-guests" class="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+
+            <div class="">
+              <label for="children-guests">Children</label>
+              <select id="children-guests" class="">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-cta btn-primary">Book Now</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="overlay"></div>
+    </section>
+    <!-- HOME-HERO-AREA-END -->
+
+    <!-- NEWSLETTER-SECTION-START -->
+    <section class="newsletter"></section>
+    <!-- NEWSLETTER-SECTION-END -->
+
+    <!-- FOOTER-SECTION-START -->
+    <footer class="footer"></footer>
+    <!-- FOOTER-SECTION-END -->
+
+    <!-- BOOTSTRAP-JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- SWIPER-JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- PRELOADER-JS -->
+    <script src="assets/js/pageloader.js"></script>
+    <!-- WEATHER-JS -->
+    <script src="assets/js/weather.js"></script>
+    <!-- DATEPICKER-JS -->
+    <script src="assets/js/datepicker.min.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+
+    <!-- GSAP -->
+    <script src="assets/js/gsap/gsap.min.js"></script>
+    <!-- MAIN-JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
