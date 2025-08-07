@@ -131,6 +131,8 @@
   --theme-primary: #c65624;
   --bg-newsletter: #2d4d3a;
 
+  --overlay-color: rgba(0, 0, 0, 0.5);
+
   --font-body: "Centra No1", sans-serif;
   --font-heading: "IvyMode", sans-serif;
   --font-book: "CentraNo1 Book", sans-serif;
@@ -167,10 +169,9 @@
   --s100: 100px;
   --s200: 200px;
 
-  --laptop-width: 1366px;
-  --tablet-width: 992px;
-  --mobile-width: 768px;
-  --small-mobile-width: 576px;
+  --full-width: 100%;
+  --full-height: 100%;
+  --full-vh: 100vh;
 }
 
 /*================================================================================================================
@@ -185,6 +186,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
+  height: 500vh;
 }
 
 h1,
@@ -260,8 +262,8 @@ input[type="search"]::-webkit-search-cancel-button {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: var(--full-width);
+  height: var(--full-vh);
   background-color: var(--bg-newsletter);
   display: flex;
   justify-content: center;
@@ -285,20 +287,37 @@ input[type="search"]::-webkit-search-cancel-button {
 /*================================================================================================================
                                         HEADER-SECTION 
 ===================================================================================================================*/
-.header {
-  position: fixed;
+#main-header {
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: var(--full-width);
+  background: transparent;
+  transition: top 0.3s ease, background 0.3s ease;
+  z-index: 1000;
+}
+
+#main-header.fixed {
+  position: fixed;
+  top: 0;
+  background: var(--bg-newsletter);
+}
+
+/* Hide header */
+#main-header.hidden {
+  top: -100px;
+}
+
+.header {
+  width: var(--full-width);
   height: var(--s80);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
 }
 
 .header nav {
-  width: 100%;
+  width: var(--full-width);
   position: relative;
   z-index: 100;
 }
@@ -387,7 +406,7 @@ input[type="search"]::-webkit-search-cancel-button {
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 100vh;
+  height: var(--full-vh);
 }
 
 .hero-headline-wrapper {
@@ -484,7 +503,7 @@ input[type="search"]::-webkit-search-cancel-button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--overlay-color);
   z-index: 1;
 }
 
@@ -509,6 +528,21 @@ input[type="search"]::-webkit-search-cancel-button {
                                        RESPONSIVE-FOR-TABLETS 
 ===================================================================================================================*/
 @media screen and (max-width: 992px) {
+  #main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-newsletter);
+
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  #main-header.hidden {
+    top: -100px;
+  }
+
   .hero-headline {
     font-size: var(--s75);
   }
@@ -531,9 +565,9 @@ input[type="search"]::-webkit-search-cancel-button {
                                       RESPONSIVE-FOR-SMALL-MOBILES 
 ===================================================================================================================*/
 @media screen and (max-width: 576px) {
-  .hero-headline {
-    /* font-size: var(--s48); */
-  }
+  /* .hero-headline {
+    font-size: var(--s48);
+  } */
 }
 
 /*================================================================================================================
