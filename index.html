@@ -20,7 +20,7 @@
     <!-- SWIPER-CSS -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!-- CUSTOM-CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/new.css" />
   </head>
 
   <body>
@@ -284,7 +284,9 @@
             <div class="row g-4">
               <!-- SELECT-PACKAGE -->
               <div class="col-12 col-sm-6 col-md-4">
-                <div class="form-floating">
+                <div class="form-group">
+                  <label for="packages">Packages</label>
+
                   <select class="form-select" id="packages">
                     <option value="Select Package" selected disabled>
                       Select Package
@@ -295,7 +297,6 @@
                       Day Long with Evening
                     </option>
                   </select>
-                  <label for="packages">Packages</label>
                 </div>
               </div>
 
@@ -304,15 +305,16 @@
                 class="col-12 col-sm-6 col-md-4 form-block"
                 data-block="checkin"
               >
-                <div class="form-floating">
+                <div class="form-group">
+                  <label for="check-in">Check-in</label>
+
                   <input
                     type="text"
                     name="check-in"
                     id="check-in"
                     class="datepicker form-control"
-                    placeholder="DD/MM/YYYY"
+                    placeholder="Select Date"
                   />
-                  <label for="check-in">Check-in</label>
                 </div>
               </div>
 
@@ -321,15 +323,16 @@
                 class="col-12 col-sm-6 col-md-4 form-block"
                 data-block="checkout"
               >
-                <div class="form-floating">
+                <div class="form-group">
+                  <label for="check-out">Check-out</label>
+
                   <input
                     type="text"
                     name="check-out"
                     id="check-out"
                     class="datepicker form-control"
-                    placeholder="DD/MM/YYYY"
+                    placeholder="Select Date"
                   />
-                  <label for="check-out">Check-out</label>
                 </div>
               </div>
 
@@ -338,14 +341,15 @@
                 class="col-12 col-sm-6 col-md-4 form-block"
                 data-block="adults"
               >
-                <div class="form-floating">
+                <div class="form-group">
+                  <label for="adult-guests">Adults</label>
+
                   <input
                     type="number"
                     class="form-control"
                     id="adult-guests"
                     placeholder="1"
                   />
-                  <label for="adult-guests">Adults</label>
                 </div>
               </div>
 
@@ -354,14 +358,15 @@
                 class="col-12 col-sm-6 col-md-4 form-block"
                 data-block="children"
               >
-                <div class="form-floating">
+                <div class="form-group">
+                  <label for="children-guests">Children</label>
+
                   <input
                     type="number"
                     class="form-control"
                     id="children-guests"
                     placeholder="0"
                   />
-                  <label for="children-guests">Children</label>
                 </div>
               </div>
 
@@ -370,14 +375,15 @@
                 class="col-12 col-sm-6 col-md-4 form-block"
                 data-block="others"
               >
-                <div class="form-floating">
+                <div class="form-group">
+                  <label for="other-guests">Others</label>
+
                   <input
                     type="number"
                     class="form-control"
                     id="other-guests"
                     placeholder="0"
                   />
-                  <label for="other-guests">Others</label>
                 </div>
               </div>
 

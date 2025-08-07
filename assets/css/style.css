@@ -126,6 +126,7 @@
 ===================================================================================================================*/
 
 :root {
+  /* Colors */
   --white: #ffffff;
   --black: #000000;
   --bg-light: #edece8;
@@ -135,13 +136,17 @@
 
   --overlay-color: rgba(0, 0, 0, 0.5);
   --input-focus: rgba(237, 236, 232, 0.1);
+  --border-left-color: rgba(255, 255, 255, 0.3);
 
+  /* Fonts */
   --font-body: "Centra No1", sans-serif;
   --font-heading: "IvyMode", sans-serif;
   --font-book: "CentraNo1 Book", sans-serif;
 
+  /* TRANSITION */
   --transition: all 500ms ease-in-out;
 
+  /* Sizing */
   --letter-spacing: 0.3px;
   --s1: 1px;
   --border-width: 1.5px;
@@ -149,6 +154,7 @@
   --s3: 3px;
   --s4: 4px;
   --s5: 5px;
+  --s6: 6px;
   --s8: 8px;
   --s10: 10px;
   --s11: 11px;
@@ -167,6 +173,7 @@
   --s32: 32px;
   --s35: 35px;
   --s36: 36px;
+  --s38: 38px;
   --s40: 40px;
   --s42: 42px;
   --s44: 44px;
@@ -186,13 +193,14 @@
   --s100: 100px;
   --s200: 200px;
 
+  /* Dimensions */
   --full-width: 100%;
   --full-height: 100%;
   --full-vh: 100vh;
 }
 
 /*================================================================================================================
-                                      RESETTINGS
+                                      BASE & RESETS
 ===================================================================================================================*/
 
 body {
@@ -412,13 +420,15 @@ select:focus {
   background-color: var(--bg-newsletter);
   color: var(--white);
   font-family: var(--font-body);
-  font-weight: 300;
+  font-weight: 400;
   border: none;
   outline: none;
 }
 
 .btn-cta {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-style: solid;
   border-width: var(--border-width);
   font-family: var(--font-book);
@@ -675,40 +685,68 @@ select:focus {
   width: 100%;
 }
 
-.form-floating {
+.form-group {
   display: flex;
   flex-direction: column;
-  gap: var(--s4);
+  position: relative;
+  border-left: solid var(--border-width) var(--border-left-color);
+  padding-left: var(--s6);
 }
 
-.form-floating > label,
-.datepicker,
-.datepicker:focus,
-.datepicker:checked {
-  color: var(--text-primary);
-  font-family: var(--font-body);
+.form-group > label {
+  color: var(--white);
+  font-family: var(--font-book);
+  font-size: var(--s13);
+  font-weight: 400;
+  transition: var(--transition);
+  padding-left: var(--s4);
+}
+
+/* Make the default disabled placeholder */
+#packages:invalid {
+  color: var(--bg-light);
+}
+
+/* Make the selected color */
+#packages:not(:invalid) {
+  color: var(--theme-primary);
+}
+
+.form-control::placeholder {
+  color: var(--theme-primary);
+  font-family: var(--font-book);
   font-size: var(--s15);
   font-weight: 300;
 }
 
-.form-floating > .form-control,
-.form-floating > .form-select {
+.form-group > label,
+.datepicker,
+.datepicker:focus,
+.datepicker:checked {
+  /* color: var(--text-primary); */
+  font-family: var(--font-body);
+  font-size: var(--s13);
+  font-weight: 300;
+}
+
+.form-group > .form-control,
+.form-group > .form-select {
   background: transparent;
   border: 0;
-  border-left: solid var(--border-width) var(--theme-primary);
   border-radius: 0;
   color: var(--white);
   font-family: var(--font-body);
   font-size: var(--s15);
   font-weight: 300;
+  padding-left: var(--s4);
 
-  height: var(--s58);
+  height: var(--s38);
 }
 
 .form-control,
 .form-select,
-.form-floating > .form-control,
-.form-floating > .form-select {
+.form-group > .form-control,
+.form-group > .form-select {
   color: var(--white);
   font-family: var(--font-body);
   font-size: var(--s15);
@@ -725,6 +763,10 @@ select:focus {
 
 .form-select option:disabled {
   background: var(--text-primary);
+  color: var(--bg-light);
+}
+
+.form-select option:selected {
   color: var(--theme-primary);
 }
 
@@ -734,14 +776,6 @@ select:focus {
   outline: none;
 }
 
-.form-floating > label {
-  color: var(--theme-primary);
-  font-family: var(--font-book);
-  font-size: var(--s15);
-  font-weight: 400;
-  transition: var(--transition);
-}
-
 .form-select:focus ~ label,
 .form-control:focus ~ label {
   color: var(--theme-primary);
@@ -749,17 +783,17 @@ select:focus {
   font-weight: 600;
 }
 
-.form-floating > .form-control-plaintext ~ label,
-.form-floating > .form-control:focus ~ label,
-.form-floating > .form-control:not(:placeholder-shown) ~ label,
-.form-floating > .form-select ~ label {
+.form-group > .form-control-plaintext ~ label,
+.form-group > .form-control:focus ~ label,
+.form-group > .form-control:not(:placeholder-shown) ~ label,
+.form-group > .form-select ~ label {
   color: var(--theme-primary);
   font-family: var(--font-book);
   font-weight: 600;
 }
 
-.form-floating > .form-control,
-.form-floating > .form-control-plaintext {
+.form-group > .form-control,
+.form-group > .form-control-plaintext {
   color: var(--white);
   font-family: var(--font-body);
   font-size: var(--s15);
@@ -767,7 +801,7 @@ select:focus {
 }
 
 .booking-form .btn-primary {
-  height: var(--s58);
+  height: var(--s38);
 }
 
 .overlay {

@@ -1,5 +1,4 @@
 const getDatePickerTitle = (elem) => {
-  // From the label or the aria-label
   const label = elem.nextElementSibling;
   let titleText = "";
   if (label && label.tagName === "LABEL") {
@@ -17,5 +16,16 @@ for (const elem of elems) {
     format: "dd/mm/yyyy",
     title: getDatePickerTitle(elem),
     autohide: true,
+    clearBtn: true,
   });
+
+  // Force placeholder when no date selected
+  elem.addEventListener("changeDate", () => {
+    if (!elem.value) {
+      elem.placeholder = "Select date";
+    }
+  });
+
+  // Set placeholder initially
+  elem.placeholder = "Select date";
 }
