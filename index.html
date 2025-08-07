@@ -114,43 +114,50 @@
         </div>
       </div>
 
+      <!-- Booking AREA -->
       <div class="booking-area">
         <div class="container">
+          <!-- ✅ Booking Form -->
           <form class="booking-form">
+            <!-- SELECT-PACKAGE -->
             <div class="form-info">
               <label for="packages">Packages</label>
               <select id="packages" class="packages">
+                <option value="" selected disabled>Select Package</option>
                 <option value="Day">Day</option>
                 <option value="Evening">Evening</option>
                 <option value="Night">Night</option>
               </select>
             </div>
 
-            <div class="form-info">
-              <label for="check-in">Check-in</label>
+            <!-- CHECK-IN -->
+            <div class="form-info form-floating">
               <input
                 type="text"
                 name="check-in"
                 id="check-in"
-                class="datepicker"
-                placeholder="Select Check-in Date"
+                class="datepicker form-control"
+                placeholder="DD/MM/YYYY"
               />
+              <label for="check-in">Check-in</label>
             </div>
 
-            <div class="form-info">
-              <label for="check-out">Check-out</label>
+            <!-- CHECK-OUT -->
+            <div class="form-info form-floating">
               <input
                 type="text"
                 name="check-out"
                 id="check-out"
-                class="datepicker"
-                placeholder="Select Check-out Date"
+                class="datepicker form-control"
+                placeholder="DD/MM/YYYY"
               />
+              <label for="check-out">Check-out</label>
             </div>
 
+            <!-- ADULT-PERSON -->
             <div class="form-info">
               <label for="adult-guests">Adults</label>
-              <select id="adult-guests" class="">
+              <select id="adult-guests">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -158,9 +165,10 @@
               </select>
             </div>
 
+            <!-- CHILDREN -->
             <div class="form-info">
               <label for="children-guests">Children</label>
-              <select id="children-guests" class="">
+              <select id="children-guests">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -168,11 +176,13 @@
               </select>
             </div>
 
+            <!-- ✅ SUBMIT CTA -->
             <button type="submit" class="btn-cta btn-primary">Book Now</button>
           </form>
         </div>
       </div>
 
+      <!-- SECTION-OVERLAY -->
       <div class="overlay"></div>
     </section>
     <!-- HOME-HERO-AREA-END -->
@@ -185,17 +195,49 @@
     <footer class="footer"></footer>
     <!-- FOOTER-SECTION-END -->
 
+    <!-- ✅ FORM SUCCESS TOAST -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1050">
+      <div
+        id="formSuccessToast"
+        class="toast align-items-center text-white bg-success border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Booking submitted successfully!</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+
     <!-- BOOTSTRAP-JS -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- SWIPER-JS -->
     <script src="assets/js/swiper-bundle.min.js"></script>
     <!-- PRELOADER-JS -->
     <script src="assets/js/pageloader.js"></script>
+
+    <!-- DATEPICKER-JS -->
+    <script src="assets/js//datepicker-full.min.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+
+    <!-- BOOKING-FORM-JS -->
+    <script src="assets/js/booking-form.js"></script>
+
+    <!-- TOOLTIP-JS -->
+    <script src="assets/js/tooltip.js"></script>
+
+    <!-- LANGUAGE-JS -->
+    <!--  <script src="assets/js/language.js"></script> -->
+
     <!-- WEATHER-JS -->
     <script src="assets/js/weather.js"></script>
-    <!-- DATEPICKER-JS -->
-    <script src="assets/js/datepicker.min.js"></script>
-    <script src="assets/js/datepicker.js"></script>
 
     <!-- GSAP -->
     <script src="assets/js/gsap/gsap.min.js"></script>

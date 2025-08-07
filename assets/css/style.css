@@ -1,17 +1,17 @@
 /* Centra No1 font-face definitions */
 @font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-Light.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-Light.woff') format('woff');
+  font-family: "Centra No1";
+  src: url("../fonts/CentraNo1/CentraNo1-Light.woff2") format("woff2"),
+    url("../fonts/CentraNo1/CentraNo1-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Centra No1';
-  src: url('../fonts/CentraNo1/CentraNo1-Medium.woff2') format('woff2'),
-    url('../fonts/CentraNo1/CentraNo1-Medium.woff') format('woff');
+  font-family: "Centra No1";
+  src: url("../fonts/CentraNo1/CentraNo1-Medium.woff2") format("woff2"),
+    url("../fonts/CentraNo1/CentraNo1-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -19,9 +19,9 @@
 
 /* Centra No1 BOOK font-face definitions */
 @font-face {
-  font-family: 'CentraNo1 Book';
-  src: url('../fonts/CentraNo1-Book/CentraNo1-Book.woff2') format('woff2'),
-    url('../fonts/CentraNo1-Book/CentraNo1-Book.woff') format('woff');
+  font-family: "CentraNo1 Book";
+  src: url("../fonts/CentraNo1-Book/CentraNo1-Book.woff2") format("woff2"),
+    url("../fonts/CentraNo1-Book/CentraNo1-Book.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -29,90 +29,90 @@
 
 /* IvyMode font-face definitions */
 @font-face {
-  font-family: 'IvyMode';
-  src: url('../fonts/IvyMode/IvyMode-Bold.woff2') format('woff2'),
-    url('../fonts/IvyMode/IvyMode-Bold.woff') format('woff');
+  font-family: "IvyMode";
+  src: url("../fonts/IvyMode/IvyMode-Bold.woff2") format("woff2"),
+    url("../fonts/IvyMode/IvyMode-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'IvyMode';
-  src: url('../fonts/IvyMode/IvyMode-BoldItalic.woff2') format('woff2'),
-    url('../fonts/IvyMode/IvyMode-BoldItalic.woff') format('woff');
+  font-family: "IvyMode";
+  src: url("../fonts/IvyMode/IvyMode-BoldItalic.woff2") format("woff2"),
+    url("../fonts/IvyMode/IvyMode-BoldItalic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'IvyMode';
-  src: url('../fonts/IvyMode/IvyMode-Regular.woff2') format('woff2'),
-    url('../fonts/IvyMode/IvyMode-Regular.woff') format('woff');
+  font-family: "IvyMode";
+  src: url("../fonts/IvyMode/IvyMode-Regular.woff2") format("woff2"),
+    url("../fonts/IvyMode/IvyMode-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'IvyMode';
-  src: url('../fonts/IvyMode/IvyMode-Italic.woff2') format('woff2'),
-    url('../fonts/IvyMode/IvyMode-Italic.woff') format('woff');
+  font-family: "IvyMode";
+  src: url("../fonts/IvyMode/IvyMode-Italic.woff2") format("woff2"),
+    url("../fonts/IvyMode/IvyMode-Italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'IvyMode';
-  src: url('../fonts/IvyMode/IvyMode-Light.woff2') format('woff2'),
-    url('../fonts/IvyMode/IvyMode-Light.woff') format('woff');
+  font-family: "IvyMode";
+  src: url("../fonts/IvyMode/IvyMode-Light.woff2") format("woff2"),
+    url("../fonts/IvyMode/IvyMode-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'IvyMode';
-  src: url('../fonts/IvyMode/IvyMode-LightItalic.woff2') format('woff2'),
-    url('../fonts/IvyMode/IvyMode-LightItalic.woff') format('woff');
+  font-family: "IvyMode";
+  src: url("../fonts/IvyMode/IvyMode-LightItalic.woff2") format("woff2"),
+    url("../fonts/IvyMode/IvyMode-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'IvyMode';
-  src: url('../fonts/IvyMode/IvyMode-SemiBold.woff2') format('woff2'),
-    url('../fonts/IvyMode/IvyMode-SemiBold.woff') format('woff');
+  font-family: "IvyMode";
+  src: url("../fonts/IvyMode/IvyMode-SemiBold.woff2") format("woff2"),
+    url("../fonts/IvyMode/IvyMode-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'IvyMode';
-  src: url('../fonts/IvyMode/IvyMode-SemiBoldItalic.woff2') format('woff2'),
-    url('../fonts/IvyMode/IvyMode-SemiBoldItalic.woff') format('woff');
+  font-family: "IvyMode";
+  src: url("../fonts/IvyMode/IvyMode-SemiBoldItalic.woff2") format("woff2"),
+    url("../fonts/IvyMode/IvyMode-SemiBoldItalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'IvyMode';
-  src: url('../fonts/IvyMode/IvyMode-Thin.woff2') format('woff2'),
-    url('../fonts/IvyMode/IvyMode-Thin.woff') format('woff');
+  font-family: "IvyMode";
+  src: url("../fonts/IvyMode/IvyMode-Thin.woff2") format("woff2"),
+    url("../fonts/IvyMode/IvyMode-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'IvyMode';
-  src: url('../fonts/IvyMode/IvyMode-ThinItalic.woff2') format('woff2'),
-    url('../fonts/IvyMode/IvyMode-ThinItalic.woff') format('woff');
+  font-family: "IvyMode";
+  src: url("../fonts/IvyMode/IvyMode-ThinItalic.woff2") format("woff2"),
+    url("../fonts/IvyMode/IvyMode-ThinItalic.woff") format("woff");
   font-weight: 100;
   font-style: italic;
   font-display: swap;
@@ -120,16 +120,16 @@
 
 /* VARIABLES definitions */
 :root {
-  --white: #FFFFFF;
+  --white: #ffffff;
   --black: #000000;
-  --bg-light: #EDECE8;
+  --bg-light: #edece8;
   --text-primary: #121110;
   --theme-primary: #c65624;
   --bg-newsletter: #2d4d3a;
 
-  --font-body: 'Centra No1', sans-serif;
-  --font-heading: 'IvyMode', sans-serif;
-  --font-book: 'CentraNo1 Book', sans-serif;
+  --font-body: "Centra No1", sans-serif;
+  --font-heading: "IvyMode", sans-serif;
+  --font-book: "CentraNo1 Book", sans-serif;
 
   --transition: all 500ms ease-in-out;
 
@@ -211,6 +211,11 @@ p {
 img {
   max-width: 100%;
   height: auto;
+}
+
+input,
+select {
+  outline: none;
 }
 
 ::selection {
@@ -408,6 +413,7 @@ img {
 /* BOOKING-AREA */
 .booking-area {
   background-color: var(--text-primary);
+  padding: var(--s24);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -418,6 +424,19 @@ img {
   display: flex;
   align-items: center;
   width: 100%;
+}
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s4);
+}
+
+.form-info label,
+.datepicker,
+.datepicker:focus,
+.datepicker:checked {
+  color: var(--theme-primary);
 }
 
 .overlay {
