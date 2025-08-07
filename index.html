@@ -132,84 +132,118 @@
 
       <!-- Booking AREA -->
       <div class="booking-area">
-        <div class="container">
-          <!-- ✅ Booking Form -->
-          <form class="booking-form">
-            <!-- SELECT-PACKAGE -->
-            <div class="form-info form-floating">
-              <select class="form-select" id="packages">
-                <option value="Select Package" selected disabled>
-                  Select Package
-                </option>
-                <option value="Day">Day</option>
-                <option value="Evening">Evening</option>
-                <option value="Night">Night</option>
-              </select>
+        <!-- ✅ Booking Form -->
+        <form class="booking-form">
+          <div class="container">
+            <div class="row g-4">
+              <!-- SELECT-PACKAGE -->
+              <div class="col-12 col-sm-6 col-md-4">
+                <div class="form-info form-floating">
+                  <select class="form-select" id="packages">
+                    <option value="Select Package" selected disabled>
+                      Select Package
+                    </option>
+                    <option value="Day Long">Day Long</option>
+                    <option value="Evening">Evening</option>
+                    <option value="Day Long with Evening">
+                      Day Long with Evening
+                    </option>
+                  </select>
+                  <label for="packages">Packages</label>
+                </div>
+              </div>
 
-              <label for="packages">Packages</label>
+              <!-- CHECK-IN -->
+              <div
+                class="col-12 col-sm-6 col-md-4 form-block"
+                data-block="checkin"
+              >
+                <div class="form-info form-floating">
+                  <input
+                    type="text"
+                    name="check-in"
+                    id="check-in"
+                    class="datepicker form-control"
+                    placeholder="DD/MM/YYYY"
+                  />
+                  <label for="check-in">Check-in</label>
+                </div>
+              </div>
+
+              <!-- CHECK-OUT -->
+              <div
+                class="col-12 col-sm-6 col-md-4 form-block"
+                data-block="checkout"
+              >
+                <div class="form-info form-floating">
+                  <input
+                    type="text"
+                    name="check-out"
+                    id="check-out"
+                    class="datepicker form-control"
+                    placeholder="DD/MM/YYYY"
+                  />
+                  <label for="check-out">Check-out</label>
+                </div>
+              </div>
+
+              <!-- ADULTS -->
+              <div
+                class="col-12 col-sm-6 col-md-4 form-block"
+                data-block="adults"
+              >
+                <div class="form-info form-floating">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="adult-guests"
+                    placeholder="1"
+                  />
+                  <label for="adult-guests">Adults</label>
+                </div>
+              </div>
+
+              <!-- CHILDREN -->
+              <div
+                class="col-12 col-sm-6 col-md-4 form-block"
+                data-block="children"
+              >
+                <div class="form-info form-floating">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="children-guests"
+                    placeholder="0"
+                  />
+                  <label for="children-guests">Children</label>
+                </div>
+              </div>
+
+              <!-- OTHERS -->
+              <div
+                class="col-12 col-sm-6 col-md-4 form-block"
+                data-block="others"
+              >
+                <div class="form-info form-floating">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="other-guests"
+                    placeholder="0"
+                  />
+                  <label for="other-guests">Others</label>
+                </div>
+              </div>
+
+              <!-- SUBMIT CTA -->
+              <div class="col-12 submit-block">
+                <button type="submit" class="btn-cta btn-primary w-100">
+                  Book Now
+                </button>
+              </div>
             </div>
-
-            <!-- CHECK-IN -->
-            <div class="form-info form-floating">
-              <input
-                type="text"
-                name="check-in"
-                id="check-in"
-                class="datepicker form-control"
-                placeholder="DD/MM/YYYY"
-              />
-              <label for="check-in">Check-in</label>
-            </div>
-
-            <!-- CHECK-OUT -->
-            <div class="form-info form-floating">
-              <input
-                type="text"
-                name="check-out"
-                id="check-out"
-                class="datepicker form-control"
-                placeholder="DD/MM/YYYY"
-              />
-              <label for="check-out">Check-out</label>
-            </div>
-
-            <!-- ADULT-PERSON -->
-            <div class="form-info form-floating">
-              <input
-                type="number"
-                class="form-control"
-                id="adult-guests"
-                placeholder="1"
-              />
-              <label for="adult-guests">Adults</label>
-            </div>
-
-            <!-- CHILDREN -->
-            <div class="form-info form-floating">
-              <input
-                type="number"
-                class="form-control"
-                id="children-guests"
-                placeholder="1"
-              />
-              <label for="children-guests">Children</label>
-            </div>
-
-            <!-- OTHTERS -->
-            <div class="form-info form-floating">
-              <input
-                type="number"
-                class="form-control"
-                id="other-guests"
-                placeholder="1"
-              />
-              <label for="other-guests">Others</label>
-            </div>
-
-            <!-- ✅ SUBMIT CTA -->
-            <button type="submit" class="btn-cta btn-primary">Book Now</button>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
 
       <!-- SECTION-OVERLAY -->
@@ -227,7 +261,9 @@
 
     <!-- ✅ Toasts for Booking Form Validation -->
     <!-- ✅ Toast Container (Top Right Corner) -->
-    <div class="toast-container position-fixed bottom-0 end-0 p-3 z-3">
+    <div
+      class="toast-container position-fixed bottom-0 end-0 p-3 z-3 mb-4 me-4"
+    >
       <!-- ✅ Check-in Toast -->
       <div
         id="toastCheckIn"
