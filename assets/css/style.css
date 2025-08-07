@@ -1,6 +1,7 @@
 /*================================================================================================================
                                       font-face definitions
 ===================================================================================================================*/
+
 @font-face {
   font-family: "Centra No1";
   src: url("../fonts/CentraNo1/CentraNo1-Light.woff2") format("woff2"),
@@ -123,6 +124,7 @@
 /*================================================================================================================
                                       VARIABLES-definitions
 ===================================================================================================================*/
+
 :root {
   --white: #ffffff;
   --black: #000000;
@@ -140,25 +142,37 @@
 
   --transition: all 500ms ease-in-out;
 
+  --letter-spacing: 0.3px;
+  --s1: 1px;
+  --border-width: 1.5px;
+  --s2: 2px;
+  --s3: 3px;
   --s4: 4px;
   --s5: 5px;
   --s8: 8px;
   --s10: 10px;
   --s11: 11px;
   --s12: 12px;
+  --s13: 13px;
   --s14: 14px;
+  --s15: 15px;
   --s16: 16px;
   --s17: 17px;
   --s18: 18px;
+  --s20: 20px;
+  --s22: 22px;
   --s24: 24px;
+  --s28: 28px;
   --s30: 30px;
   --s32: 32px;
+  --s35: 35px;
   --s36: 36px;
   --s40: 40px;
   --s42: 42px;
   --s44: 44px;
   --s45: 45px;
   --s48: 48px;
+  --s50: 50px;
   --s52: 52px;
   --s54: 54px;
   --s58: 58px;
@@ -168,6 +182,7 @@
   --s75: 75px;
   --s76: 76px;
   --s80: 80px;
+  --s96: 96px;
   --s100: 100px;
   --s200: 200px;
 
@@ -179,6 +194,7 @@
 /*================================================================================================================
                                       RESETTINGS
 ===================================================================================================================*/
+
 body {
   background-color: var(--white);
   color: var(--text-primary);
@@ -284,6 +300,7 @@ select:focus {
 /*================================================================================================================
                                       PRELOADER 
 ===================================================================================================================*/
+
 .pageloader {
   position: fixed;
   top: 0;
@@ -313,6 +330,7 @@ select:focus {
 /*================================================================================================================
                                         HEADER-SECTION 
 ===================================================================================================================*/
+
 #main-header {
   position: absolute;
   top: 0;
@@ -366,7 +384,7 @@ select:focus {
   font-family: var(--font-body);
   font-size: var(--s16);
   font-weight: 300;
-  letter-spacing: 1px;
+  letter-spacing: var(--s1);
   text-decoration: underline;
   text-decoration-color: transparent;
   transition: none;
@@ -402,7 +420,7 @@ select:focus {
 .btn-cta {
   display: inline-block;
   border-style: solid;
-  border-width: 1.5px;
+  border-width: var(--border-width);
   font-family: var(--font-book);
   font-size: var(--s15);
   font-weight: 500;
@@ -435,28 +453,50 @@ select:focus {
   color: var(--theme-primary);
 }
 
+.btn-menu {
+  width: var(--s48);
+  height: var(--s48);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+  border: none;
+  font-size: var(--s24);
+  color: var(--white);
+  font-weight: 600;
+}
+
 /* MOBILE-MENU */
 .offcanvas {
   background: var(--bg-newsletter);
 }
 
+.offcanvas.offcanvas-top {
+  height: var(--full-vh);
+}
+
+.offcanvas-header {
+  height: var(--s80);
+}
+
 .offcanvas-header .btn-close {
   background: transparent;
-  opacity: 1;
-  width: var(--s48);
-  width: var(--s48);
+  font-size: var(--s24);
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
+  width: var(--s48);
+  width: var(--s48);
+  opacity: 1;
   text-align: center;
-}
-
-.offcanvas-header .btn-close i {
-  font-size: var(--s24);
-  color: var(--theme-primary);
+  transition: var(--transition);
 }
 
 .offcanvas-header .btn-close:hover {
+  color: var(--theme-primary);
+  opacity: 1;
   transform: rotate(90deg);
 }
 
@@ -490,7 +530,7 @@ select:focus {
   font-family: var(--font-body);
   font-size: var(--s16);
   font-weight: 300;
-  letter-spacing: 1px;
+  letter-spacing: var(--s1);
   text-align: center;
 }
 
@@ -550,6 +590,7 @@ select:focus {
 /*================================================================================================================
                                       HOME-HERO-AREA
 ===================================================================================================================*/
+
 .home-hero-area {
   display: flex;
   flex-direction: column;
@@ -587,7 +628,7 @@ select:focus {
   line-height: 1.6;
   font-weight: 300;
   text-align: center;
-  letter-spacing: 0.3px;
+  letter-spacing: var(--letter-spacing);
 }
 
 /* WEATHER-APP-STYLES */
@@ -603,13 +644,12 @@ select:focus {
   color: var(--white);
   font-family: var(--font-body);
   font-size: var(--s14);
-  font-weight: 300;
-  letter-spacing: 0.3px;
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing);
 }
 
 .weather p i {
   font-size: inherit;
-  font-weight: 300;
 }
 
 .weather p span {
@@ -619,9 +659,10 @@ select:focus {
 /*================================================================================================================
                                       BOOKING-AREA
 ===================================================================================================================*/
+
 .booking-area {
   background-color: var(--text-primary);
-  padding: var(--s24);
+  padding: var(--s10);
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -652,8 +693,11 @@ select:focus {
 
 .form-floating > .form-control,
 .form-floating > .form-select {
+  background: transparent;
+  border: 0;
+  border-left: solid var(--border-width) var(--theme-primary);
   border-radius: 0;
-  color: var(--text-primary);
+  color: var(--white);
   font-family: var(--font-body);
   font-size: var(--s15);
   font-weight: 300;
@@ -665,32 +709,58 @@ select:focus {
 .form-select,
 .form-floating > .form-control,
 .form-floating > .form-select {
-  color: var(--text-primary);
+  color: var(--white);
   font-family: var(--font-body);
   font-size: var(--s15);
   font-weight: 300;
 }
 
 .form-select option {
+  background: var(--bg-newsletter);
+  color: var(--white);
   font-family: var(--font-body);
   font-size: var(--s15);
   font-weight: 300;
 }
 
-.form-floating label {
-  color: var(--text-primary);
+.form-select option:disabled {
+  background: var(--text-primary);
+  color: var(--theme-primary);
+}
+
+.form-select:focus,
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.form-floating > label {
+  color: var(--theme-primary);
   font-family: var(--font-book);
   font-size: var(--s15);
   font-weight: 400;
+  transition: var(--transition);
 }
 
-.form-floating:focus label {
-  font-size: var(--s15);
+.form-select:focus ~ label,
+.form-control:focus ~ label {
+  color: var(--theme-primary);
+  font-family: var(--font-book);
+  font-weight: 600;
+}
+
+.form-floating > .form-control-plaintext ~ label,
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  color: var(--theme-primary);
+  font-family: var(--font-book);
+  font-weight: 600;
 }
 
 .form-floating > .form-control,
 .form-floating > .form-control-plaintext {
-  color: var(--text-primary);
+  color: var(--white);
   font-family: var(--font-body);
   font-size: var(--s15);
   font-weight: 300;
@@ -713,6 +783,7 @@ select:focus {
 /*================================================================================================================
                                       NEWSLETTER-SECTION
 ===================================================================================================================*/
+
 .newsletter {
   background: var(--bg-newsletter);
   padding: var(--s80) 0;
@@ -735,7 +806,7 @@ select:focus {
   color: var(--bg-newsletter);
   font-size: var(--s15);
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: var(--s1);
   opacity: 0.8;
   text-transform: uppercase;
   transition: var(--transition);
@@ -758,7 +829,7 @@ select:focus {
 .inputfield {
   background: transparent;
   border: none;
-  border-bottom: solid 1.5px var(--white);
+  border-bottom: solid var(--border-width) var(--white);
   color: var(--white);
   font-family: var(--font-body);
   font-size: var(--s15);
@@ -788,6 +859,7 @@ select:focus {
 /*================================================================================================================
                                        RESPONSIVE-FOR-LAPTOPS 
 ===================================================================================================================*/
+
 @media screen and (max-width: 1280px) {
   /* .weather {
     margin-block-start: -2rem;
@@ -797,6 +869,7 @@ select:focus {
 /*================================================================================================================
                                        RESPONSIVE-FOR-TABLETS 
 ===================================================================================================================*/
+
 @media screen and (max-width: 992px) {
   #main-header {
     position: fixed;
@@ -822,13 +895,14 @@ select:focus {
   }
 
   .section-title {
-    font-size: var(--s36);
+    font-size: var(--s35);
   }
 }
 
 /*================================================================================================================
                                       RESPONSIVE-FOR-MOBILES 
 ===================================================================================================================*/
+
 @media screen and (max-width: 768px) {
   .hero-headline {
     font-size: var(--s64);
@@ -836,8 +910,27 @@ select:focus {
 }
 
 /*================================================================================================================
+                                      RESPONSIVE-FOR-EXTRA-SMALL-MOBILES 
+===================================================================================================================*/
+
+@media screen and (max-width: 319px) {
+  .hero-headline {
+    font-size: var(--s32);
+  }
+
+  .weather {
+    margin-block-start: -3rem;
+  }
+
+  .hero-headline-wrapper {
+    gap: var(--s8);
+  }
+}
+
+/*================================================================================================================
                                       RESPONSIVE-FOR-SMALL-MOBILES 
 ===================================================================================================================*/
+
 @media screen and (max-width: 576px) {
   /* .hero-headline {
     font-size: var(--s48);
@@ -847,6 +940,7 @@ select:focus {
 /*================================================================================================================
                                       ANIMATION-KEYFRAMES 
 ===================================================================================================================*/
+
 @keyframes fadeInUp {
   0% {
     transform: translate(0px, 100px);
