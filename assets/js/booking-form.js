@@ -1,15 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector(".booking-form");
 
-  const packagesSelect = document.getElementById("packages");
-  const checkIn = document.getElementById("check-in");
-  const checkOut = document.getElementById("check-out");
-  const adults = document.getElementById("adult-guests");
-  const children = document.getElementById("children-guests");
-  const submitBtn = document.querySelector(
-    ".booking-form button[type='submit']"
-  );
+  const packagesSelect = document.querySelector("#packages");
+  const checkIn = document.querySelector("#check-in");
+  const checkOut = document.querySelector("#check-out");
+  const adults = document.querySelector("#adult-guests");
 
+  const submitBtn = form.querySelector("button[type='submit']");
   const formElements = document.querySelectorAll(
     ".form-info:not(:first-child)"
   );
@@ -23,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   packagesSelect.addEventListener("change", () => {
     const selectedPackage = packagesSelect.value;
 
-    if (!selectedPackage || selectedPackage === "") {
+    if (!selectedPackage || selectedPackage === "Select Package") {
       formElements.forEach((el) => (el.style.display = "none"));
       submitBtn.style.display = "none";
       return;
@@ -32,7 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
     formElements.forEach((el) => (el.style.display = "block"));
     submitBtn.style.display = "inline-block";
 
-    // Check-out logic
     if (selectedPackage === "Day" || selectedPackage === "Evening") {
       checkOutField.style.display = "none";
       checkOut.value = "";
@@ -45,45 +41,33 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault(); // ✅ Prevent page reload
 
-    const packageType = packagesSelect.value;
+    const selectedPackage = packagesSelect.value;
     const checkInVal = checkIn.value.trim();
     const checkOutVal = checkOut.value.trim();
-    const adultVal = adults.value;
-    const childrenVal = children.value;
+    const adultVal = adults.value.trim();
 
-    const errors = [];
-
-    if (!packageType) {
-      errors.push("Please select a package.");
-    }
+    // Validation
     if (!checkInVal) {
-      errors.push("Check-in date is required.");
-    }
-    if (packageType === "Night" && !checkOutVal) {
-      errors.push("Check-out date is required for Night package.");
-    }
-    if (!adultVal) {
-      errors.push("Please select number of adults.");
-    }
-    if (!childrenVal) {
-      errors.push("Please select number of children.");
-    }
-
-    if (errors.length > 0) {
-      alert(errors.join("\n")); // Optional: convert to Bootstrap toast
+      new bootstrap.Toast(document.querySelector("#toastCheckIn")).show();
       return;
     }
 
-    // ✅ Show Bootstrap Toast
-    const toastEl = document.getElementById("formSuccessToast");
-    const toast = new bootstrap.Toast(toastEl);
-    toast.show();
+    if (selectedPackage === "Night" && !checkOutVal) {
+      new bootstrap.Toast(document.querySelector("#toastCheckOut")).show();
+      return;
+    }
 
-    // ✅ Reset form
-    form.reset();
+    if (!adultVal || parseInt(adultVal) <= 0) {
+      new bootstrap.Toast(document.querySelector("#toastAdults")).show();
+      return;
+    }
 
-    // ✅ Hide fields again after reset
-    formElements.forEach((el) => (el.style.display = "none"));
-    submitBtn.style.display = "none";
+    // ✅ Show success toast and then redirect
+    new bootstrap.Toast(document.querySelector("#toastSuccess")).show();
+
+    // Wait for 2 seconds before redirecting
+    setTimeout(() => {
+      window.location.href = "available-rooms.html";
+    }, 2000);
   });
 });
