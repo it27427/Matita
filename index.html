@@ -41,16 +41,162 @@
       <div class="container">
         <nav class="d-flex align-items-center justify-content-between">
           <!-- BRAND-LOGO -->
-          <a href="index.html" class="brand-logo-link">
-            <img
-              src="assets/images/logo/logo.png"
-              alt="BRAND-LOGO"
-              class="brand-logo"
-            />
-          </a>
+          <div class="order-1 order-lg-0 ms-4 ms-md-0">
+            <a href="index.html" class="brand-logo-link">
+              <img
+                src="assets/images/logo/logo.png"
+                alt="BRAND-LOGO"
+                class="brand-logo"
+              />
+            </a>
+          </div>
 
-          <!-- NAVIGATION-MENU -->
-          <div class="d-none d-lg-block">
+          <!-- MOBILE-MENU -->
+          <div class="d-lg-none d-block order-0">
+            <button
+              class="btn-menu"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- OFFCANVAS -->
+            <div
+              class="offcanvas offcanvas-start w-100"
+              tabindex="-1"
+              id="mobileMenu"
+              aria-labelledby="mobileMenuLabel"
+            >
+              <div class="offcanvas-header">
+                <a href="index.html" class="brand-logo-link">
+                  <img
+                    src="assets/images/logo/logo.png"
+                    alt="BRAND-LOGO"
+                    class="brand-logo"
+                  />
+                </a>
+
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+
+              <div class="offcanvas-body">
+                <ul class="mobile-menu">
+                  <li class="mobile-menu-item">
+                    <a href="index.html" class="mobile-menu-link active">
+                      Home
+                    </a>
+                  </li>
+
+                  <li class="mobile-menu-item">
+                    <a href="about.html" class="mobile-menu-link"> About </a>
+                  </li>
+
+                  <li class="mobile-menu-item">
+                    <a href="rooms.html" class="mobile-menu-link"> Rooms </a>
+                  </li>
+
+                  <li class="mobile-menu-item">
+                    <a href="packages.html" class="mobile-menu-link">
+                      Packages
+                    </a>
+                  </li>
+
+                  <li class="mobile-menu-item">
+                    <a href="gallery.html" class="mobile-menu-link">
+                      Gallery
+                    </a>
+                  </li>
+
+                  <li class="mobile-menu-item">
+                    <a href="activities.html" class="mobile-menu-link">
+                      Activities
+                    </a>
+                  </li>
+
+                  <li class="mobile-menu-item">
+                    <a href="contact.html" class="mobile-menu-link">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+
+                <hr class="border-white my-4" />
+
+                <div class="d-flex flex-column gap-4">
+                  <div
+                    class="d-flex flex-column align-items-center justify-content-around text-center gap-2"
+                  >
+                    <p class="menu-text">
+                      Somewhere in the green hills of Bangladesh, Matita is a
+                      wellness resort that offers a unique experience of
+                      relaxation and rejuvenation.
+                    </p>
+
+                    <a href="#" class="link">Open in Google Maps</a>
+                  </div>
+
+                  <ul class="contactmenu">
+                    <li class="contactmenu-item">
+                      <span>Telephone </span>
+
+                      <a href="tel:+8801234567890" class="contactmenu-link">
+                        +880 123 456 7890
+                      </a>
+                    </li>
+
+                    <li class="contactmenu-item">
+                      <span>Email </span>
+                      <a
+                        href="mailto:reservations@matitaresort.com"
+                        class="contactmenu-link"
+                      >
+                        reservations@matitaresort.com
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul class="socialmenu">
+                    <li class="socialmenu-item">
+                      <a href="#" class="socialmenu-link">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+                    </li>
+
+                    <li class="socialmenu-item">
+                      <a href="#" class="socialmenu-link">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+
+                    <li class="socialmenu-item">
+                      <a href="#" class="socialmenu-link">
+                        <i class="fa-brands fa-x-twitter"></i>
+                      </a>
+                    </li>
+
+                    <li class="socialmenu-item">
+                      <a href="#" class="socialmenu-link">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- DESKTOP-MENU -->
+          <div class="d-none d-lg-block order-lg-1">
             <ul class="header-menu d-flex align-items-center gap-3 gap-xl-5">
               <li class="menu-item">
                 <a href="index.html" class="menu-link active"> Home </a>
@@ -61,7 +207,7 @@
               </li>
 
               <li class="menu-item">
-                <a href="rooms-and-swites.html" class="menu-link"> Rooms </a>
+                <a href="rooms.html" class="menu-link"> Rooms </a>
               </li>
 
               <li class="menu-item">
@@ -83,17 +229,17 @@
           </div>
 
           <!-- RIGHT-MENU -->
-          <div class="d-none d-md-block">
-            <div class="d-flex align-items-center gap-3 gap-xl-4">
-              <!-- LANGUAGE-DROPDOWN -->
+          <div class="d-flex align-items-center gap-3 gap-xl-4 order-2">
+            <!-- LANGUAGE-DROPDOWN -->
+            <div class="d-none d-md-block">
               <select id="language-select" class="language-select">
                 <option value="En">En</option>
                 <option value="Esp">Esp</option>
                 <option value="Fr">Fr</option>
               </select>
-
-              <a href="#" class="btn-cta btn-white">Book Now</a>
             </div>
+
+            <a href="#" class="btn-cta btn-white">Book Now</a>
           </div>
         </nav>
       </div>
