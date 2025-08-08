@@ -128,6 +128,7 @@
   --overlay-color: rgba(0, 0, 0, 0.5);
   --input-focus: rgba(237, 236, 232, 0.1);
   --border-left-color: rgba(255, 255, 255, 0.3);
+  --foot-border-color: rgba(18, 17, 16, 0.3);
 
   /* Fonts */
   --font-body: "Centra No1", sans-serif;
@@ -138,6 +139,7 @@
   --transition: all 500ms ease-in-out;
   --letter-spacing: 0.3px;
   --border-width: 1.5px;
+  -footer-link-spacing: 0.25px;
   --s1: 1px;
   --s2: 2px;
   --s3: 3px;
@@ -751,12 +753,51 @@ button,
   background: var(--input-focus);
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
-@media screen and (max-width: 1280px) {
-  /* Tablet adjustments if needed */
+/* ===== FOOER-STYLES ===== */
+.footer {
+  background: var(--bg-light);
+  padding-top: var(--s60);
 }
 
-@media screen and (max-width: 992px) {
+.foot-border {
+  border-color: var(--foot-border-color);
+  opacity: 0.5;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s8);
+  flex: 0 auto;
+}
+
+.footer-menu-link {
+  color: var(--theme-primary);
+  font-size: var(--s16);
+  font-weight: 400;
+  letter-spacing: var(--footer-link-spacing);
+  transition: var(--transition);
+}
+
+.footer-menu-link:hover {
+  color: var(--text-primary);
+}
+
+.copyright-text {
+  color: var(--text-primary);
+  font-size: var(--s16);
+  font-weight: 400;
+  letter-spacing: var(--footer-link-spacing);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media screen and (max-width: 1279px) {
+  /* Laptop adjustments if needed */
+}
+
+/* TABLET-PRO-STYLES */
+@media screen and (max-width: 991px) {
   #main-header {
     position: fixed;
     background: var(--bg-newsletter);
@@ -775,16 +816,37 @@ button,
   }
 }
 
-@media screen and (max-width: 768px) {
+/* TABLET-NORMAL-STYLES */
+@media screen and (max-width: 767px) {
   .hero-headline {
     font-size: var(--s64);
   }
 }
 
+/* SMALL-TABLET-STYLES */
 @media screen and (max-width: 576px) {
   /* Mobile adjustments */
 }
 
+/* MOBILE-RESPONSIVE-STYLES */
+@media screen and (max-width: 479px) {
+  .footer {
+    padding-top: var(--s24);
+  }
+}
+
+/* SMALL-MOBILE-STYLES */
+@media screen and (max-width: 359px) {
+  .footer-menu-link {
+    font-size: var(--s15);
+  }
+
+  .copyright-text {
+    font-size: var(--s14);
+  }
+}
+
+/* EXTRA-SMALL-MOBILE-STYLES */
 @media screen and (max-width: 319px) {
   .hero-headline {
     font-size: var(--s32);
