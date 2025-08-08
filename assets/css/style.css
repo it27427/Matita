@@ -783,11 +783,94 @@ button,
   color: var(--text-primary);
 }
 
+.footer-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s24);
+}
+
+.footer-info {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s32);
+}
+
+.foot-title {
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--s12);
+  font-weight: 500;
+  letter-spacing: var(--s1);
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.footlist-item,
+.footlist-link {
+  font-family: var(--font-body);
+  font-size: var(--s16);
+}
+
+.footlist-item {
+  color: var(--text-primary);
+  font-weight: 300;
+}
+
+.footlist-link {
+  color: var(--theme-primary);
+  font-weight: 400;
+  letter-spacing: var(--footer-link-spacing);
+  transition: var(--transition);
+}
+
+.footlist-link:hover {
+  color: var(--text-primary);
+}
+
+.contactlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactlist-link {
+  color: var(--theme-primary);
+  font-size: var(--s16);
+  font-weight: 400;
+  transition: var(--transition);
+}
+
+.contactlist-link:hover {
+  color: var(--text-primary);
+}
+
+.followlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--s4);
+}
+
+.followlist-link {
+  color: var(--theme-primary);
+  font-size: var(--s28);
+  transition: var(--transition);
+}
+
+.followlist-link:hover {
+  color: var(--text-primary);
+}
+
 .copyright-text {
   color: var(--text-primary);
   font-size: var(--s16);
   font-weight: 400;
   letter-spacing: var(--footer-link-spacing);
+}
+
+.copyright-text .currentYear {
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -821,6 +904,23 @@ button,
   .hero-headline {
     font-size: var(--s64);
   }
+
+  .footer-info-wrapper,
+  .foot-border {
+    padding-inline: var(--s20);
+  }
+
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--s8);
+    text-align: center;
+  }
+
+  .footer-info-wrapper {
+    text-align: center;
+  }
 }
 
 /* SMALL-TABLET-STYLES */
@@ -837,12 +937,9 @@ button,
 
 /* SMALL-MOBILE-STYLES */
 @media screen and (max-width: 359px) {
-  .footer-menu-link {
-    font-size: var(--s15);
-  }
-
+  .footer-menu-link,
   .copyright-text {
-    font-size: var(--s14);
+    font-size: var(--s15);
   }
 }
 
