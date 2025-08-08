@@ -579,8 +579,13 @@ button,
   letter-spacing: var(--letter-spacing);
 }
 
-.weather p i,
+.weather p i {
+  color: inherit;
+  font-size: inherit;
+}
+
 .weather p span {
+  color: inherit;
   font: inherit;
 }
 
