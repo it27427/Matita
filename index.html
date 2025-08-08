@@ -20,7 +20,7 @@
     <!-- SWIPER-CSS -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!-- CUSTOM-CSS -->
-    <link rel="stylesheet" href="assets/css/new.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
@@ -279,7 +279,7 @@
       <!-- Booking AREA -->
       <div class="booking-area">
         <!-- ✅ Booking Form -->
-        <form class="booking-form">
+        <form class="booking-form" novalidate>
           <div class="container">
             <div class="row g-4">
               <!-- SELECT-PACKAGE -->
@@ -287,7 +287,7 @@
                 <div class="form-group">
                   <label for="packages">Packages</label>
 
-                  <select class="form-select" id="packages">
+                  <select class="form-select" id="packages" autocomplete="off">
                     <option value="Select Package" selected disabled>
                       Select Package
                     </option>
@@ -302,7 +302,7 @@
 
               <!-- CHECK-IN -->
               <div
-                class="col-12 col-sm-6 col-md-4 form-block"
+                class="col-12 col-sm-6 col-md-4 form-block d-none"
                 data-block="checkin"
               >
                 <div class="form-group">
@@ -314,13 +314,14 @@
                     id="check-in"
                     class="datepicker form-control"
                     placeholder="Select Date"
+                    autocomplete="off"
                   />
                 </div>
               </div>
 
               <!-- CHECK-OUT -->
               <div
-                class="col-12 col-sm-6 col-md-4 form-block"
+                class="col-12 col-sm-6 col-md-4 form-block d-none"
                 data-block="checkout"
               >
                 <div class="form-group">
@@ -332,13 +333,14 @@
                     id="check-out"
                     class="datepicker form-control"
                     placeholder="Select Date"
+                    autocomplete="off"
                   />
                 </div>
               </div>
 
               <!-- ADULTS -->
               <div
-                class="col-12 col-sm-6 col-md-4 form-block"
+                class="col-12 col-sm-6 col-md-4 form-block d-none"
                 data-block="adults"
               >
                 <div class="form-group">
@@ -349,13 +351,14 @@
                     class="form-control"
                     id="adult-guests"
                     placeholder="1"
+                    autocomplete="off"
                   />
                 </div>
               </div>
 
               <!-- CHILDREN -->
               <div
-                class="col-12 col-sm-6 col-md-4 form-block"
+                class="col-12 col-sm-6 col-md-4 form-block d-none"
                 data-block="children"
               >
                 <div class="form-group">
@@ -366,13 +369,14 @@
                     class="form-control"
                     id="children-guests"
                     placeholder="0"
+                    autocomplete="off"
                   />
                 </div>
               </div>
 
               <!-- OTHERS -->
               <div
-                class="col-12 col-sm-6 col-md-4 form-block"
+                class="col-12 col-sm-6 col-md-4 form-block d-none"
                 data-block="others"
               >
                 <div class="form-group">
@@ -383,12 +387,13 @@
                     class="form-control"
                     id="other-guests"
                     placeholder="0"
+                    autocomplete="off"
                   />
                 </div>
               </div>
 
               <!-- SUBMIT CTA -->
-              <div class="col-12 submit-block">
+              <div class="col-12 submit-block d-none">
                 <button type="submit" class="btn-cta btn-primary w-100">
                   Book Now
                 </button>
@@ -406,6 +411,7 @@
     <!-- NEWSLETTER-SECTION-START -->
     <section class="newsletter">
       <div class="container">
+        <!-- NEWSLETTER-WRAPPER -->
         <div class="newsletter-wrapper">
           <div
             class="d-flex flex-column align-items-center justify-content-center gap-3 text-center"
@@ -419,8 +425,9 @@
             </p>
           </div>
 
+          <!-- NEWSLETTER-FORM -->
           <div class="newsletter-body">
-            <form class="formnewsletter">
+            <form class="formnewsletter" novalidate>
               <div class="row">
                 <div class="col-sm-4 col-12">
                   <input
@@ -429,6 +436,7 @@
                     id="newsletter-username"
                     class="inputfield"
                     placeholder="Enter your name"
+                    autocomplete="off"
                   />
                 </div>
 
@@ -439,6 +447,7 @@
                     id="newsletter-email"
                     class="inputfield"
                     placeholder="Enter email address"
+                    autocomplete="off"
                   />
                 </div>
 
@@ -459,8 +468,7 @@
     <footer class="footer"></footer>
     <!-- FOOTER-SECTION-END -->
 
-    <!-- ✅ Toasts for Booking Form Validation -->
-    <!-- ✅ Toast Container (Top Right Corner) -->
+    <!-- ✅ Toasts for Booking-Form && Newsletter-Form Validation -->
     <div
       class="toast-container position-fixed bottom-0 end-0 p-3 z-3 mb-4 me-4"
     >
@@ -492,9 +500,7 @@
         aria-atomic="true"
       >
         <div class="d-flex">
-          <div class="toast-body">
-            Check-out date is required for Night package.
-          </div>
+          <div class="toast-body">Check-out date is required.</div>
           <button
             type="button"
             class="btn-close btn-close-white me-2 m-auto"
@@ -533,8 +539,86 @@
       >
         <div class="d-flex">
           <div class="toast-body">
-            Booking data validated successfully. Redirecting…
+            ✅ Booking data validated successfully.
+            <span class="text-redirect">Redirecting</span>
           </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+
+      <!-- ✅ Toasts for NEWSLETTER-FORM Validation -->
+      <!-- Error Toast 1: Username Required -->
+      <div
+        id="toast-error-name-required"
+        class="toast align-items-center text-bg-danger border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Name is required.</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+
+      <!-- Error Toast 2: Email Required -->
+      <div
+        id="toast-error-email-required"
+        class="toast align-items-center text-bg-danger border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Email address is required.</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+
+      <!-- Error Toast 3: For invalid email -->
+      <div
+        id="toast-error-email-invalid"
+        class="toast align-items-center text-bg-danger border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Please insert a valid email address.</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+
+      <!-- Success Toast -->
+      <div
+        id="toast-success"
+        class="toast align-items-center text-bg-success border-0"
+        role="alert"
+        aria-live="polite"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Subscription successful!</div>
           <button
             type="button"
             class="btn-close btn-close-white me-2 m-auto"
@@ -556,17 +640,17 @@
     <script src="assets/js/header.js"></script>
 
     <!-- DATEPICKER-JS -->
-    <script src="assets/js//datepicker-full.min.js"></script>
+    <script src="assets/js/datepicker-full.min.js"></script>
     <script src="assets/js/datepicker.js"></script>
 
+    <!-- FORM-VALIDATIONS -->
     <!-- BOOKING-FORM-JS -->
     <script src="assets/js/booking-form.js"></script>
+    <!-- SUBSCRIPTION-FORM-JS -->
+    <script src="assets/js/subscription-form.js"></script>
 
     <!-- TOOLTIP-JS -->
     <script src="assets/js/tooltip.js"></script>
-
-    <!-- LANGUAGE-JS -->
-    <!--  <script src="assets/js/language.js"></script> -->
 
     <!-- WEATHER-JS -->
     <script src="assets/js/weather.js"></script>

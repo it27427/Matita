@@ -1,7 +1,26 @@
-/*================================================================================================================
-                                      font-face definitions
-===================================================================================================================*/
+/* 
+  * Project: Matita
+  * Version: 1.0.0
+  * File Type: CSS
+  * File Name: style.css
+  * File Path: assets/css/style.css
+  * Created by: Istiak Hossain Tushar
+  * Email: istiak.tushar.it@gmail.com
+  * Contact: +8801615922742
+  * GitHub: https://github.com/it27427
+  * Repository: https://github.com/it27427/Matita
+  * Created: 03-08-2025
+  * Last Modified: 08-08-2025
 
+  * Description: Main styles for the Matita project
+  * This file contains the main styles for the Matita project, including font faces, variables,
+  * base styles, component styles, and responsive design adjustments.
+  * It also includes animations for elements like the preloader and form interactions.
+  * The styles are designed to create a cohesive and visually appealing user interface for the website.
+  * Copyright (c) 2025 Matita
+*/
+
+/* ===== FONT FACES ===== */
 @font-face {
   font-family: "Centra No1";
   src: url("../fonts/CentraNo1/CentraNo1-Light.woff2") format("woff2"),
@@ -20,7 +39,6 @@
   font-display: swap;
 }
 
-/* Centra No1 BOOK font-face definitions */
 @font-face {
   font-family: "CentraNo1 Book";
   src: url("../fonts/CentraNo1-Book/CentraNo1-Book.woff2") format("woff2"),
@@ -30,101 +48,97 @@
   font-display: swap;
 }
 
-/* IvyMode font-face definitions */
 @font-face {
   font-family: "IvyMode";
+  font-display: swap;
   src: url("../fonts/IvyMode/IvyMode-Bold.woff2") format("woff2"),
     url("../fonts/IvyMode/IvyMode-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "IvyMode";
+  font-display: swap;
   src: url("../fonts/IvyMode/IvyMode-BoldItalic.woff2") format("woff2"),
     url("../fonts/IvyMode/IvyMode-BoldItalic.woff") format("woff");
   font-weight: 700;
   font-style: italic;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "IvyMode";
+  font-display: swap;
   src: url("../fonts/IvyMode/IvyMode-Regular.woff2") format("woff2"),
     url("../fonts/IvyMode/IvyMode-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "IvyMode";
+  font-display: swap;
   src: url("../fonts/IvyMode/IvyMode-Italic.woff2") format("woff2"),
     url("../fonts/IvyMode/IvyMode-Italic.woff") format("woff");
   font-weight: 400;
   font-style: italic;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "IvyMode";
+  font-display: swap;
   src: url("../fonts/IvyMode/IvyMode-Light.woff2") format("woff2"),
     url("../fonts/IvyMode/IvyMode-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "IvyMode";
+  font-display: swap;
   src: url("../fonts/IvyMode/IvyMode-LightItalic.woff2") format("woff2"),
     url("../fonts/IvyMode/IvyMode-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "IvyMode";
+  font-display: swap;
   src: url("../fonts/IvyMode/IvyMode-SemiBold.woff2") format("woff2"),
     url("../fonts/IvyMode/IvyMode-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "IvyMode";
+  font-display: swap;
   src: url("../fonts/IvyMode/IvyMode-SemiBoldItalic.woff2") format("woff2"),
     url("../fonts/IvyMode/IvyMode-SemiBoldItalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "IvyMode";
+  font-display: swap;
   src: url("../fonts/IvyMode/IvyMode-Thin.woff2") format("woff2"),
     url("../fonts/IvyMode/IvyMode-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: "IvyMode";
+  font-display: swap;
   src: url("../fonts/IvyMode/IvyMode-ThinItalic.woff2") format("woff2"),
     url("../fonts/IvyMode/IvyMode-ThinItalic.woff") format("woff");
   font-weight: 100;
   font-style: italic;
-  font-display: swap;
 }
 
-/*================================================================================================================
-                                      VARIABLES-definitions
-===================================================================================================================*/
-
+/* ===== VARIABLES ===== */
 :root {
   /* Colors */
   --white: #ffffff;
@@ -133,7 +147,6 @@
   --text-primary: #121110;
   --theme-primary: #c65624;
   --bg-newsletter: #2d4d3a;
-
   --overlay-color: rgba(0, 0, 0, 0.5);
   --input-focus: rgba(237, 236, 232, 0.1);
   --border-left-color: rgba(255, 255, 255, 0.3);
@@ -143,13 +156,11 @@
   --font-heading: "IvyMode", sans-serif;
   --font-book: "CentraNo1 Book", sans-serif;
 
-  /* TRANSITION */
-  --transition: all 500ms ease-in-out;
-
   /* Sizing */
+  --transition: all 500ms ease-in-out;
   --letter-spacing: 0.3px;
-  --s1: 1px;
   --border-width: 1.5px;
+  --s1: 1px;
   --s2: 2px;
   --s3: 3px;
   --s4: 4px;
@@ -199,19 +210,26 @@
   --full-vh: 100vh;
 }
 
-/*================================================================================================================
-                                      BASE & RESETS
-===================================================================================================================*/
+/* ===== BASE & RESETS ===== */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+figure,
+p {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   background-color: var(--white);
   color: var(--text-primary);
-  font-family: var(--font-body);
-  font-size: var(--s17);
-  font-weight: 300;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
+  font: 300 var(--s17) / 1.5 var(--font-body);
 }
 
 h1,
@@ -221,30 +239,11 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading);
-  margin: 0;
-}
-
-a,
-button,
-span {
-  font-family: var(--font-book);
-}
-
-a {
-  text-decoration: none;
-  transition: var(--transition);
 }
 
 ul,
 ol {
   list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-figure,
-p {
-  margin: 0;
 }
 
 img {
@@ -252,51 +251,44 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  transition: var(--transition);
+  font-family: var(--font-book);
+}
+
+button,
+span {
+  font-family: var(--font-book);
+}
+
 input,
 select {
   outline: none;
-  font-family: var(--font-body);
-  font-size: var(--s15);
-  font-weight: 300;
+  font: 300 var(--s15) var(--font-body);
 }
 
-/* HIDE-NUMBER-INPUT-ARROW => Chrome, Safari, Edge, Opera */
+/* Input number arrows */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  appearance: none;
   margin: 0;
 }
 
-/* HIDE-NUMBER-INPUT-ARROW => Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
-  font-family: var(--font-body);
-  font-size: var(--s15);
-  font-weight: 300;
 }
 
-/* SEARCH-CANCLE-BUTTTON-HIDE */
+/* Search cancel button */
 input[type="search"]::-webkit-search-cancel-button {
   display: none;
 }
 
-button {
-  border: none;
-  outline: none;
-}
-
-button:focus,
-input:focus,
-select:focus {
-  outline: none;
-  box-shadow: none;
-}
-
+button,
 .btn-close:focus {
-  outline: none;
   border: none;
+  outline: none;
   box-shadow: none;
 }
 
@@ -305,10 +297,8 @@ select:focus {
   color: var(--theme-primary);
 }
 
-/*================================================================================================================
-                                      PRELOADER 
-===================================================================================================================*/
-
+/* ===== COMPONENTS ===== */
+/* Preloader */
 .pageloader {
   position: fixed;
   top: 0;
@@ -335,10 +325,7 @@ select:focus {
   animation: fadeInUp 1s ease backwards;
 }
 
-/*================================================================================================================
-                                        HEADER-SECTION 
-===================================================================================================================*/
-
+/* Header */
 #main-header {
   position: absolute;
   top: 0;
@@ -351,11 +338,9 @@ select:focus {
 
 #main-header.fixed {
   position: fixed;
-  top: 0;
   background: var(--bg-newsletter);
 }
 
-/* Hide header */
 #main-header.hidden {
   top: -100px;
 }
@@ -387,15 +372,21 @@ select:focus {
   object-fit: contain;
 }
 
-.menu-link {
+/* Menu & Links */
+.menu-link,
+.mobile-menu-link,
+.menu-text,
+.link {
   color: var(--white);
-  font-family: var(--font-body);
   font-size: var(--s16);
-  font-weight: 300;
   letter-spacing: var(--s1);
+  font-weight: 300;
+}
+
+.menu-link {
+  font-family: var(--font-body);
   text-decoration: underline;
   text-decoration-color: transparent;
-  transition: none;
 }
 
 .menu-link:hover:not(.active) {
@@ -406,35 +397,33 @@ select:focus {
   text-decoration-color: var(--white);
 }
 
-/* LANGUAGE-SELECT */
-.language-select {
-  font-family: var(--font-body);
-  font-weight: 300;
-  background: transparent;
-  color: var(--white);
-  border: none;
-  outline: none;
-}
-
-.language-select option {
-  background-color: var(--bg-newsletter);
-  color: var(--white);
-  font-family: var(--font-body);
+.mobile-menu-link {
+  font-family: var(--font-heading);
+  font-size: var(--s24);
   font-weight: 400;
-  border: none;
-  outline: none;
 }
 
+.mobile-menu-link:hover:not(.active),
+.link:hover {
+  color: var(--theme-primary);
+}
+
+.mobile-menu-link.active {
+  color: var(--theme-primary);
+}
+
+.link {
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+/* Buttons */
 .btn-cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-style: solid;
-  border-width: var(--border-width);
-  font-family: var(--font-book);
-  font-size: var(--s15);
-  font-weight: 500;
-  line-height: 1;
+  border: solid var(--border-width);
+  font: 500 var(--s15) / 1 var(--font-book);
   padding: var(--s16) var(--s30) var(--s14);
   height: var(--s48);
   text-align: center;
@@ -469,15 +458,13 @@ select:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  background: transparent;
-  border: none;
   font-size: var(--s24);
   color: var(--white);
   font-weight: 600;
+  background: transparent;
 }
 
-/* MOBILE-MENU */
+/* Offcanvas */
 .offcanvas {
   background: var(--bg-newsletter);
 }
@@ -498,15 +485,13 @@ select:focus {
   align-items: center;
   justify-content: center;
   width: var(--s48);
-  width: var(--s48);
+  height: var(--s48);
   opacity: 1;
-  text-align: center;
   transition: var(--transition);
 }
 
 .offcanvas-header .btn-close:hover {
   color: var(--theme-primary);
-  opacity: 1;
   transform: rotate(90deg);
 }
 
@@ -516,48 +501,17 @@ select:focus {
   gap: var(--s16);
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
-.mobile-menu-link {
-  color: var(--white);
-  font-family: var(--font-heading);
-  font-size: var(--s24);
-  font-weight: 400;
-}
-
-.mobile-menu-link:hover:not(.active) {
-  color: var(--theme-primary);
-}
-
-.mobile-menu-link.active {
-  color: var(--theme-primary);
-}
-
-.menu-text,
-.link {
-  color: var(--white);
-  font-family: var(--font-body);
-  font-size: var(--s16);
-  font-weight: 300;
-  letter-spacing: var(--s1);
-  text-align: center;
-}
-
-.link {
-  transition: var(--transition);
-  font-weight: 500;
-}
-
-.link:hover {
-  color: var(--theme-primary);
+.contactmenu,
+.socialmenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactmenu {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
@@ -581,9 +535,6 @@ select:focus {
 }
 
 .socialmenu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: var(--s8);
 }
 
@@ -597,10 +548,7 @@ select:focus {
   color: var(--white);
 }
 
-/*================================================================================================================
-                                      HOME-HERO-AREA
-===================================================================================================================*/
-
+/* Hero Section */
 .home-hero-area {
   display: flex;
   flex-direction: column;
@@ -626,22 +574,17 @@ select:focus {
 .hero-headline {
   font-size: var(--s100);
   margin-bottom: var(--s16);
-  color: var(--white);
   line-height: 1;
+  color: var(--white);
 }
 
 .hero-subtitle {
   color: var(--white);
-  font-size: var(--s18);
-  font-family: var(--font-body);
-  font-weight: 300;
-  line-height: 1.6;
-  font-weight: 300;
-  text-align: center;
+  font: 300 var(--s18) / 1.6 var(--font-body);
   letter-spacing: var(--letter-spacing);
 }
 
-/* WEATHER-APP-STYLES */
+/* Weather */
 .weather {
   display: flex;
   flex-direction: column;
@@ -652,24 +595,16 @@ select:focus {
 
 .weather p {
   color: var(--white);
-  font-family: var(--font-body);
-  font-size: var(--s14);
-  font-weight: 500;
+  font: 500 var(--s14) var(--font-body);
   letter-spacing: var(--letter-spacing);
 }
 
-.weather p i {
-  font-size: inherit;
-}
-
+.weather p i,
 .weather p span {
   font: inherit;
 }
 
-/*================================================================================================================
-                                      BOOKING-AREA
-===================================================================================================================*/
-
+/* Booking Form */
 .booking-area {
   background-color: var(--text-primary);
   padding: var(--s10);
@@ -685,10 +620,10 @@ select:focus {
   width: 100%;
 }
 
+/* ===== FORM GROUP STYLES ===== */
 .form-group {
   display: flex;
   flex-direction: column;
-  position: relative;
   border-left: solid var(--border-width) var(--border-left-color);
   padding-left: var(--s6);
 }
@@ -698,67 +633,54 @@ select:focus {
   font-family: var(--font-book);
   font-size: var(--s13);
   font-weight: 400;
-  transition: var(--transition);
   padding-left: var(--s4);
+  transition: var(--transition);
 }
 
-/* Make the default disabled placeholder */
+/* Package select specific styling */
 #packages:invalid {
   color: var(--bg-light);
 }
 
-/* Make the selected color */
 #packages:not(:invalid) {
   color: var(--theme-primary);
 }
 
+/* Input placeholder styling */
 .form-control::placeholder {
   color: var(--theme-primary);
   font-family: var(--font-book);
+  font-weight: 500;
   font-size: var(--s15);
-  font-weight: 300;
 }
 
-.form-group > label,
-.datepicker,
-.datepicker:focus,
-.datepicker:checked {
-  /* color: var(--text-primary); */
-  font-family: var(--font-body);
-  font-size: var(--s13);
-  font-weight: 300;
-}
-
+/* Form control elements */
 .form-group > .form-control,
 .form-group > .form-select {
   background: transparent;
   border: 0;
   border-radius: 0;
-  color: var(--white);
+  color: var(--theme-primary);
   font-family: var(--font-body);
+  font-weight: 500;
   font-size: var(--s15);
-  font-weight: 300;
   padding-left: var(--s4);
-
   height: var(--s38);
 }
 
-.form-control,
-.form-select,
-.form-group > .form-control,
-.form-group > .form-select {
-  color: var(--white);
-  font-family: var(--font-body);
-  font-size: var(--s15);
-  font-weight: 300;
+/* Focus states */
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
 }
 
+/* Select option styling */
 .form-select option {
   background: var(--bg-newsletter);
   color: var(--white);
   font-family: var(--font-body);
-  font-size: var(--s15);
   font-weight: 300;
+  font-size: var(--s15);
 }
 
 .form-select option:disabled {
@@ -770,38 +692,12 @@ select:focus {
   color: var(--theme-primary);
 }
 
-.form-select:focus,
-.form-control:focus {
-  box-shadow: none;
-  outline: none;
-}
-
-.form-select:focus ~ label,
-.form-control:focus ~ label {
-  color: var(--theme-primary);
-  font-family: var(--font-book);
-  font-weight: 600;
-}
-
-.form-group > .form-control-plaintext ~ label,
-.form-group > .form-control:focus ~ label,
-.form-group > .form-control:not(:placeholder-shown) ~ label,
-.form-group > .form-select ~ label {
-  color: var(--theme-primary);
-  font-family: var(--font-book);
-  font-weight: 600;
-}
-
-.form-group > .form-control,
-.form-group > .form-control-plaintext {
-  color: var(--white);
-  font-family: var(--font-body);
-  font-size: var(--s15);
-  font-weight: 300;
-}
-
-.booking-form .btn-primary {
-  height: var(--s38);
+.text-redirect::after {
+  content: "";
+  display: inline-block;
+  width: 1em;
+  text-align: left;
+  animation: ellipsisSteps 1.5s infinite steps(3);
 }
 
 .overlay {
@@ -814,10 +710,7 @@ select:focus {
   z-index: 1;
 }
 
-/*================================================================================================================
-                                      NEWSLETTER-SECTION
-===================================================================================================================*/
-
+/* Newsletter */
 .newsletter {
   background: var(--bg-newsletter);
   padding: var(--s80) 0;
@@ -838,8 +731,7 @@ select:focus {
 
 .btn-subscribe {
   color: var(--bg-newsletter);
-  font-size: var(--s15);
-  font-weight: 400;
+  font: 400 var(--s15) var(--font-book);
   letter-spacing: var(--s1);
   opacity: 0.8;
   text-transform: uppercase;
@@ -865,9 +757,7 @@ select:focus {
   border: none;
   border-bottom: solid var(--border-width) var(--white);
   color: var(--white);
-  font-family: var(--font-body);
-  font-size: var(--s15);
-  font-weight: 300;
+  font: 300 var(--s15) var(--font-body);
   width: var(--full-width);
   height: var(--s48);
   padding: var(--s8) var(--s12);
@@ -876,48 +766,22 @@ select:focus {
 
 .inputfield::placeholder {
   color: var(--white);
-  font-family: var(--font-body);
-  font-size: var(--s15);
-  font-weight: 300;
+  font: 300 var(--s15) var(--font-body);
 }
 
 .inputfield:focus {
   background: var(--input-focus);
-  border-bottom-color: var(--white);
 }
 
-/*================================================================================================================
-                                      FOOTER-SECTION 
-===================================================================================================================*/
-
-/*================================================================================================================
-                                       RESPONSIVE-FOR-LAPTOPS 
-===================================================================================================================*/
-
+/* ===== RESPONSIVE DESIGN ===== */
 @media screen and (max-width: 1280px) {
-  /* .weather {
-    margin-block-start: -2rem;
-  } */
+  /* Tablet adjustments if needed */
 }
-
-/*================================================================================================================
-                                       RESPONSIVE-FOR-TABLETS 
-===================================================================================================================*/
 
 @media screen and (max-width: 992px) {
   #main-header {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
     background: var(--bg-newsletter);
-
-    transition: top 0.3s ease-in-out;
-    z-index: 1000;
-  }
-
-  #main-header.hidden {
-    top: -100px;
   }
 
   .hero-headline {
@@ -933,19 +797,15 @@ select:focus {
   }
 }
 
-/*================================================================================================================
-                                      RESPONSIVE-FOR-MOBILES 
-===================================================================================================================*/
-
 @media screen and (max-width: 768px) {
   .hero-headline {
     font-size: var(--s64);
   }
 }
 
-/*================================================================================================================
-                                      RESPONSIVE-FOR-EXTRA-SMALL-MOBILES 
-===================================================================================================================*/
+@media screen and (max-width: 576px) {
+  /* Mobile adjustments */
+}
 
 @media screen and (max-width: 319px) {
   .hero-headline {
@@ -961,28 +821,34 @@ select:focus {
   }
 }
 
-/*================================================================================================================
-                                      RESPONSIVE-FOR-SMALL-MOBILES 
-===================================================================================================================*/
-
-@media screen and (max-width: 576px) {
-  /* .hero-headline {
-    font-size: var(--s48);
-  } */
-}
-
-/*================================================================================================================
-                                      ANIMATION-KEYFRAMES 
-===================================================================================================================*/
-
+/* ===== ANIMATIONS ===== */
+/* FADEINUP */
 @keyframes fadeInUp {
   0% {
     transform: translate(0px, 100px);
     opacity: 0;
   }
-
   100% {
     transform: translate(0px, 0);
     opacity: 1;
   }
 }
+
+/* REDIRECTING... */
+@keyframes ellipsisSteps {
+  0% {
+    content: "";
+  }
+  33% {
+    content: ".";
+  }
+  66% {
+    content: "..";
+  }
+  100% {
+    content: "...";
+  }
+}
+
+/* ===== END OF STYLES ===== */
+/* End of file: style.css */
