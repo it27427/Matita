@@ -1,25 +1,3 @@
-/* 
-  * Project: Matita
-  * Version: 1.0.0
-  * File Type: CSS
-  * File Name: style.css
-  * File Path: assets/css/style.css
-  * Created by: Istiak Hossain Tushar
-  * Email: istiak.tushar.it@gmail.com
-  * Contact: +8801615922742
-  * GitHub: https://github.com/it27427
-  * Repository: https://github.com/it27427/Matita
-  * Created: 03-08-2025
-  * Last Modified: 08-08-2025
-
-  * Description: Main styles for the Matita project
-  * This file contains the main styles for the Matita project, including font faces, variables,
-  * base styles, component styles, and responsive design adjustments.
-  * It also includes animations for elements like the preloader and form interactions.
-  * The styles are designed to create a cohesive and visually appealing user interface for the website.
-  * Copyright (c) 2025 Matita
-*/
-
 /* ===== FONT FACES ===== */
 @font-face {
   font-family: "Centra No1";
