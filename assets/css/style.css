@@ -126,6 +126,8 @@
   --theme-primary: #c65624;
   --bg-newsletter: #2d4d3a;
   --overlay-color: rgba(0, 0, 0, 0.5);
+  --overlay-color-light: rgba(0, 0, 0, 0.3);
+  --overlay-color-dark: rgba(0, 0, 0, 0.7);
   --input-focus: rgba(237, 236, 232, 0.1);
   --border-left-color: rgba(255, 255, 255, 0.3);
   --foot-border-color: rgba(18, 17, 16, 0.3);
@@ -721,6 +723,10 @@ button,
   z-index: 1;
 }
 
+.overlay-light {
+  background-color: var(--overlay-color-light);
+}
+
 /* WELCOME-SECTION */
 .welcome {
   padding-block-start: var(--s140);
@@ -816,6 +822,25 @@ button,
   bottom: auto;
   z-index: 5;
 } */
+
+/* WELCOME-SLIDER */
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: var(--h110);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: var(--s80);
+  font-size: var(--s40);
+  opacity: 1;
+}
+
+.carousel-control-prev {
+}
+.carousel-control-next {
+}
 
 /* SECTION-SEYLES */
 .section {
