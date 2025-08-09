@@ -1332,21 +1332,6 @@ h3 {
   margin-bottom: var(--s10);
 }
 
-/* .column-content-wrapper {
-  scroll-snap-align: start;
-}
-
-.tri-col-grid {
-  grid-auto-flow: column;
-  overflow: auto hidden;
-  scroll-snap-type: x mandatory;
-  scroll-padding: 0 var(--s20);
-}
-
-.tri-col-grid::-webkit-scrollbar {
-  display: none;
-} */
-
 /* SECTION-2-STYLES */
 .quotesection {
   background-color: var(--bg-light);
@@ -1697,7 +1682,7 @@ h3 {
 
   .floating-img-3 {
     left: auto;
-    top: 22%;
+    top: 33%;
     right: 11%;
     bottom: auto;
     display: block;
@@ -1733,7 +1718,7 @@ h3 {
 
   .floating-img-4 {
     bottom: auto;
-    top: 20%;
+    top: 33%;
     right: 6%;
     width: var(--s200);
     height: var(--s200);
@@ -1759,6 +1744,18 @@ h3 {
     width: 60vw;
     scroll-snap-align: start;
     text-align: left;
+  }
+
+  .tri-col-grid {
+    max-width: 95%;
+    overflow-x: scroll;
+    scroll-snap-align: start;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 var(--s20);
+  }
+
+  .tri-col-grid::-webkit-scrollbar {
+    display: none;
   }
 
   .grid-img {
