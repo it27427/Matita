@@ -456,6 +456,20 @@ button,
   background: transparent;
 }
 
+/* LANGUAGE-SELECT */
+.language-select {
+  background: transparent;
+  border: none;
+  color: var(--white);
+}
+
+.language-select option {
+  background: var(--bg-newsletter);
+  font-size: var(--s16);
+  letter-spacing: var(--s1);
+  font-weight: 300;
+}
+
 /* Offcanvas */
 .offcanvas {
   background: var(--bg-newsletter);
@@ -762,18 +776,13 @@ button,
   position: relative;
 }
 
-.vector-map {
+/* .vector-map {
   position: absolute;
   top: var(--s250);
   width: var(--s300);
   margin-right: auto;
   margin-left: auto;
   z-index: 2;
-
-  opacity: 1;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-  transform-style: preserve-3d;
 }
 
 .vector-map img {
@@ -806,7 +815,7 @@ button,
   right: 0%;
   bottom: auto;
   z-index: 5;
-}
+} */
 
 /* SECTION-SEYLES */
 .section {
