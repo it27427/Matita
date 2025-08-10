@@ -133,6 +133,7 @@
   --foot-border-color: rgba(18, 17, 16, 0.3);
   --block-quote-border-color: #e2e2e2;
 
+  --image-overlay-bg: rgba(18, 17, 16, 0.5);
   --room-overlay-bg: rgba(0, 0, 0, 0);
   --room-overlay-hover-bg: rgba(198, 86, 36, 0.6);
 
@@ -202,6 +203,7 @@
   --s100: 100px;
   --s120: 120px;
   --s140: 140px;
+  --s150: 150px;
   --s170: 170px;
   --s180: 180px;
   --s200: 200px;
@@ -763,6 +765,11 @@ button,
   background-color: var(--overlay-color-light);
 }
 
+.overlay-img {
+  background-color: var(--image-overlay-bg);
+}
+
+/* ===== HOME-PAGE-STYLES-END ===== */
 /* WELCOME-SECTION */
 .welcome {
   padding-block-start: var(--s140);
@@ -1551,6 +1558,74 @@ h3 {
   font: inherit;
   letter-spacing: inherit;
 }
+/* ===== HOME-PAGE-STYLES-END ===== */
+
+/* ===== SINGLE-ROOM-STYLES-START ===== */
+
+.intro-title {
+  width: 70%;
+  margin-inline: auto;
+  margin-block-end: var(--s16);
+  border-left: 0 none transparent;
+  font-family: var(--font-heading);
+  font-size: var(--s38);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: var(--s1);
+  text-align: center;
+}
+
+.room-details-wrapper {
+  display: flex;
+  width: 70%;
+  margin-inline: auto;
+  margin-top: var(--s32);
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-room-features {
+  position: relative;
+  display: flex;
+  margin-block-start: var(--s16);
+  margin-block-end: var(--s24);
+  justify-content: space-between;
+  font-family: var(--font-body);
+  font-size: var(--s15);
+  line-height: 1.5;
+  font-weight: 300;
+  width: var(--full-width);
+  z-index: 10;
+}
+
+.stay-detail {
+  display: flex;
+  align-items: center;
+  gap: var(--s16);
+}
+
+.stay-detail-icon {
+  width: var(--s25);
+  height: var(--s20);
+  opacity: 0.8;
+}
+
+.room-page-slider,
+.room-page-slider .carousel-inner,
+.room-page-slider .carousel-item {
+  height: var(--full-vh);
+}
+
+/* ===== SINGLE-ROOM-STYLES-END ===== */
+
+/* ===== ROOM-PAGE-STYLES-START ===== */
+/* ===== ROOM-PAGE-STYLES-END ===== */
+
+/* ===== ABOUT-PAGE-STYLES-START ===== */
+/* ===== ABOUT-PAGE-STYLES-END ===== */
+
+/* ===== CONTACT-PAGE-STYLES-START ===== */
+/* ===== CONTACT-PAGE-STYLES-END ===== */
 
 /* ===== RESPONSIVE DESIGN ===== */
 
@@ -1657,6 +1732,14 @@ h3 {
 
   .vector-map {
     top: var(--s180);
+  }
+
+  .hero-room-features {
+    height: var(--s150);
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 40%;
+    margin-inline: auto;
   }
 }
 
@@ -1817,6 +1900,15 @@ h3 {
   .intro-wrapper {
     margin-block-end: 0;
   }
+
+  .intro-title,
+  .room-details-wrapper {
+    width: var(--full-width);
+  }
+
+  .intro-title.rooms {
+    font-size: var(--s32);
+  }
 }
 
 /* MOBILE-RESPONSIVE-STYLES */
@@ -1849,6 +1941,14 @@ h3 {
 
   .floating-img-2 {
     width: var(--s200);
+  }
+
+  .intro-title.rooms {
+    font-size: var(--s24);
+  }
+
+  .hero-room-features {
+    max-width: var(--full-width);
   }
 }
 
