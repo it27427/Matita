@@ -664,17 +664,18 @@ button,
 /* Booking Form */
 .booking-area {
   background-color: var(--text-primary);
-  padding: var(--s10);
+  padding: var(--s10) var(--s20);
   position: absolute;
   bottom: 0;
   width: 100%;
   z-index: 2;
 }
 
-.booking-form {
-  display: flex;
-  align-items: center;
-  width: 100%;
+.booking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--s180), 1fr));
+  gap: 1rem;
+  align-items: end;
 }
 
 /* ===== FORM GROUP STYLES ===== */
@@ -1689,6 +1690,13 @@ h3 {
 
 /* ===== RESPONSIVE DESIGN ===== */
 
+/* Optional: at very large screens, limit max columns */
+@media (min-width: 1200px) {
+  .booking-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .floating-img-3 {
     left: 8%;
@@ -1804,6 +1812,19 @@ h3 {
 
   .intro-title {
     width: var(--full-width);
+  }
+}
+
+/* Optional: at smaller tablets */
+@media (min-width: 600px) and (max-width: 991px) {
+  .booking-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .submit-block {
+    grid-column: span 2;
+    display: flex;
+    align-items: flex-end;
   }
 }
 
@@ -2016,6 +2037,11 @@ h3 {
 
   .facilities-grid {
     grid-template-columns: 1fr;
+  }
+
+  .booking-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
 }
 
