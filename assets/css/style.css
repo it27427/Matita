@@ -132,6 +132,8 @@
   --foot-border-color: rgba(18, 17, 16, 0.3);
   --block-quote-border-color: #e2e2e2;
 
+  --faq-border-color: rgba(0, 0, 0, 0.1);
+
   --overlay-color-light: rgba(0, 0, 0, 0.3);
   --overlay-light-bg: rgba(18, 17, 16, 0.25);
   --image-overlay-bg: rgba(18, 17, 16, 0.5);
@@ -215,6 +217,8 @@
   --s260: 260px;
   --s300: 300px;
   --s350: 350px;
+  --s390: 390px;
+  --s400: 400px;
   --s450: 450px;
   --s1000: 1000px;
 
@@ -1571,12 +1575,133 @@ h3 {
 }
 
 .grid-100 {
+  position: relative;
+  display: grid;
+  width: var(--full-width);
+  margin-inline: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: start;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 64px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
 
 .faq-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#faq-wrapper {
+  grid-column-end: 2;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-row-start: 1;
+  align-self: start;
 }
 
 .faq-container-image {
+  display: flex;
+  flex-direction: column;
+  width: var(--full-width);
+  height: var(--s450);
+  overflow: hidden;
+}
+
+.faq-container-image img {
+  transition: var(--transition);
+}
+
+.faq-container-image:hover img {
+  transform: scale(1.1);
+}
+
+/* FAQ-ACCORDION-STYLES */
+.accordion {
+  width: var(--full-width);
+  min-height: var(--s390);
+}
+
+.accordion-item {
+  border: 0;
+  width: var(--full-width);
+}
+
+.accordion-item:first-of-type > .accordion-header .accordion-button,
+.accordion-item:last-of-type > .accordion-header .accordion-button {
+  border-radius: 0;
+}
+
+.accordion-item > .accordion-header {
+  height: var(--75);
+}
+
+.accordion-item > .accordion-header .accordion-button {
+  background: transparent;
+  box-shadow: none;
+  border-bottom: solid var(--border-width) var(--faq-border-color);
+  display: flex;
+  align-items: center;
+  gap: var(--s16);
+  height: var(--75);
+  transition: var(--transition);
+}
+
+.accordion-item > .accordion-header .accordion-button:not(.collapsed) .faqicon {
+  transform: rotate(-180deg);
+}
+
+.accordion-item > .accordion-header .accordion-button:not(.collapsed) {
+  background-color: var(--bg-light);
+  border-color: var(--bg-light);
+}
+
+/* .accordion-collapse,
+.accordion-collapse.collapse {
+  transition: none;
+} */
+
+.accordion-collapse.collapse:not(.show) .accordion-body,
+.accordion-collapse.collapse.show .accordion-body,
+.accordion-body {
+  background-color: var(--bg-light);
+}
+
+.accordion-button::after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.faqicon {
+  border-bottom: solid var(--s1) var(--faq-border-color);
+  border-radius: 100%;
+  font-size: var(--s15);
+  line-height: 1;
+  width: var(--s30);
+  height: var(--s30);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.faqtitle {
+  font-family: var(--font-book);
+  font-size: var(--s17);
+  font-weight: 300;
+  line-height: var(--s26);
+}
+
+.accordion-item > .accordion-header .accordion-button:hover {
+  background-color: var(--bg-light);
+}
+
+.faq-text {
 }
 
 /* ===== ROOM-PAGE-STYLES-END ===== */
@@ -1813,6 +1938,16 @@ h3 {
   .intro-title {
     width: var(--full-width);
   }
+
+  .grid-100 {
+    padding-inline: var(--s20);
+    grid-column-gap: var(--s24);
+    grid-template-columns: 1fr;
+  }
+
+  #faq-wrapper {
+    grid-row-start: 2;
+  }
 }
 
 /* Optional: at smaller tablets */
@@ -1996,6 +2131,10 @@ h3 {
 
   .booking-area {
     padding-inline: var(--s10);
+  }
+
+  .faq-container-image {
+    height: 50vh;
   }
 }
 

@@ -410,8 +410,11 @@
     <section class="section faq">
       <div class="container">
         <div class="grid-100">
-          <div class="faq-content-wrapper">
-            <div class="text-wrapper"></div>
+          <div id="faq-wrapper" class="faq-content-wrapper">
+            <div class="text-wrapper mb-4">
+              <h5 class="top-text mb-2">Before you arrive</h5>
+              <h2 class="mb-2">Information for guests</h2>
+            </div>
 
             <!-- FAQ-ACCORDION-START -->
             <div class="accordion" id="accordionFaq">
@@ -426,7 +429,12 @@
                     aria-expanded="false"
                     aria-controls="collapseFaq-1"
                   >
-                    Important Information for Guests
+                    <span class="faqicon">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                    <span class="faqtitle">
+                      Important Information for Guests
+                    </span>
                   </button>
                 </h2>
 
@@ -458,7 +466,10 @@
                     aria-expanded="false"
                     aria-controls="collapseFaq-2"
                   >
-                    Family Plan
+                    <span class="faqicon">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                    <span class="faqtitle"> Family Plan </span>
                   </button>
                 </h2>
 
@@ -490,7 +501,10 @@
                     aria-expanded="false"
                     aria-controls="collapseFaq-3"
                   >
-                    Arrivals And Departures
+                    <span class="faqicon">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                    <span class="faqtitle"> Arrivals And Departures </span>
                   </button>
                 </h2>
 
@@ -522,7 +536,13 @@
                     aria-expanded="false"
                     aria-controls="collapseFaq-4"
                   >
-                    Guaranteed Reservations And Deposits
+                    <span class="faqicon">
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+
+                    <span class="faqtitle">
+                      Guaranteed Reservations And Deposits
+                    </span>
                   </button>
                 </h2>
 
@@ -547,7 +567,11 @@
           </div>
 
           <div class="faq-container-image">
-            <img src="assets/images/faq/faq-thumb.jpg" alt="FAQ-THUMBNAIL" />
+            <img
+              src="assets/images/faq/faq-thumb.jpg"
+              class="w-100 h-100 object-fit-cover"
+              alt="FAQ-THUMBNAIL"
+            />
           </div>
         </div>
       </div>
