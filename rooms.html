@@ -279,126 +279,88 @@
 
       <!-- Booking AREA -->
       <div class="booking-area">
-        <!-- ✅ Booking Form -->
         <form class="booking-form" novalidate>
-          <div class="container">
-            <div class="row g-4">
-              <!-- SELECT-PACKAGE -->
-              <div class="col-12 col-sm-6 col-md-4">
-                <div class="form-group">
-                  <label for="packages">Packages</label>
+          <div class="booking-grid">
+            <!-- SELECT-PACKAGE -->
+            <div class="form-group">
+              <label for="packages">Packages</label>
+              <select class="form-select" id="packages" autocomplete="off">
+                <option value="Select Package" selected disabled>
+                  Select Package
+                </option>
+                <option value="Day Long">Day Long</option>
+                <option value="Evening">Evening</option>
+                <option value="Stay Night Package">Stay Night Package</option>
+              </select>
+            </div>
 
-                  <select class="form-select" id="packages" autocomplete="off">
-                    <option value="Select Package" selected disabled>
-                      Select Package
-                    </option>
-                    <option value="Day Long">Day Long</option>
-                    <option value="Evening">Evening</option>
-                    <option value="Day Long with Evening">
-                      Day Long with Evening
-                    </option>
-                  </select>
-                </div>
-              </div>
+            <!-- CHECK-IN -->
+            <div class="form-group form-block d-none" data-block="checkin">
+              <label for="check-in">Check-in</label>
+              <input
+                type="text"
+                name="check-in"
+                id="check-in"
+                class="datepicker form-control"
+                placeholder="Select Date"
+                autocomplete="off"
+              />
+            </div>
 
-              <!-- CHECK-IN -->
-              <div
-                class="col-12 col-sm-6 col-md-4 form-block d-none"
-                data-block="checkin"
-              >
-                <div class="form-group">
-                  <label for="check-in">Check-in</label>
+            <!-- CHECK-OUT -->
+            <div class="form-group form-block d-none" data-block="checkout">
+              <label for="check-out">Check-out</label>
+              <input
+                type="text"
+                name="check-out"
+                id="check-out"
+                class="datepicker form-control"
+                placeholder="Select Date"
+                autocomplete="off"
+              />
+            </div>
 
-                  <input
-                    type="text"
-                    name="check-in"
-                    id="check-in"
-                    class="datepicker form-control"
-                    placeholder="Select Date"
-                    autocomplete="off"
-                  />
-                </div>
-              </div>
+            <!-- ADULTS -->
+            <div class="form-group form-block d-none" data-block="adults">
+              <label for="adult-guests">Adults</label>
+              <input
+                type="number"
+                class="form-control"
+                id="adult-guests"
+                placeholder="1"
+                autocomplete="off"
+              />
+            </div>
 
-              <!-- CHECK-OUT -->
-              <div
-                class="col-12 col-sm-6 col-md-4 form-block d-none"
-                data-block="checkout"
-              >
-                <div class="form-group">
-                  <label for="check-out">Check-out</label>
+            <!-- CHILDREN -->
+            <div class="form-group form-block d-none" data-block="children">
+              <label for="children-guests">Children</label>
+              <input
+                type="number"
+                class="form-control"
+                id="children-guests"
+                placeholder="0"
+                autocomplete="off"
+              />
+            </div>
 
-                  <input
-                    type="text"
-                    name="check-out"
-                    id="check-out"
-                    class="datepicker form-control"
-                    placeholder="Select Date"
-                    autocomplete="off"
-                  />
-                </div>
-              </div>
+            <!-- OTHERS -->
+            <div class="form-group form-block d-none" data-block="others">
+              <label for="other-guests">Others</label>
+              <input
+                type="number"
+                class="form-control"
+                id="other-guests"
+                placeholder="0"
+                autocomplete="off"
+              />
+            </div>
 
-              <!-- ADULTS -->
-              <div
-                class="col-12 col-sm-6 col-md-4 form-block d-none"
-                data-block="adults"
-              >
-                <div class="form-group">
-                  <label for="adult-guests">Adults</label>
-
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="adult-guests"
-                    placeholder="1"
-                    autocomplete="off"
-                  />
-                </div>
-              </div>
-
-              <!-- CHILDREN -->
-              <div
-                class="col-12 col-sm-6 col-md-4 form-block d-none"
-                data-block="children"
-              >
-                <div class="form-group">
-                  <label for="children-guests">Children</label>
-
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="children-guests"
-                    placeholder="0"
-                    autocomplete="off"
-                  />
-                </div>
-              </div>
-
-              <!-- OTHERS -->
-              <div
-                class="col-12 col-sm-6 col-md-4 form-block d-none"
-                data-block="others"
-              >
-                <div class="form-group">
-                  <label for="other-guests">Others</label>
-
-                  <input
-                    type="number"
-                    class="form-control"
-                    id="other-guests"
-                    placeholder="0"
-                    autocomplete="off"
-                  />
-                </div>
-              </div>
-
-              <!-- SUBMIT CTA -->
-              <div class="col-12 submit-block d-none">
-                <button type="submit" class="btn-cta btn-primary w-100">
-                  Book Now
-                </button>
-              </div>
+            <!-- SUBMIT CTA -->
+            <div class="submit-block d-none">
+              <button type="submit" class="btn-cta btn-primary w-100">
+                Book Now
+              </button>
             </div>
           </div>
         </form>
