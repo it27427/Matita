@@ -517,6 +517,10 @@ button,
   background: transparent;
 }
 
+.text-theme {
+  color: var(--theme-primary);
+}
+
 /* LANGUAGE-SELECT */
 .language-select {
   background: transparent;
@@ -1339,6 +1343,11 @@ h2 {
   flex-direction: column;
   align-items: stretch;
   text-align: center;
+  overflow: hidden;
+}
+
+.column-content-wrapper:hover .grid-img {
+  transform: scale(0.97);
 }
 
 .grid-img {
@@ -1348,6 +1357,7 @@ h2 {
   width: 100%;
   height: var(--s350);
   margin-bottom: var(--s24);
+  transition: var(--transition);
 }
 
 h3 {
@@ -2388,6 +2398,10 @@ input[type="radio"] {
 
   .roomcontainer .btn-cta {
     width: var(--full-width);
+  }
+
+  .contact .grid-image {
+    min-height: var(--s200);
   }
 }
 
