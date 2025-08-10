@@ -72,8 +72,8 @@ document.addEventListener("DOMContentLoaded", () => {
       submitBlock.classList.remove("d-none");
     }
 
-    // Handle "Day Long with Evening" package
-    if (selected === "Day Long with Evening") {
+    // Handle "Stay Night Package" package
+    if (selected === "Stay Night Package") {
       checkOutBlock.classList.remove("d-none");
 
       // Make button full width (new row)
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Check if check-out is required
-    if (selectedPackage === "Day Long with Evening" && !checkOutVal) {
+    if (selectedPackage === "Stay Night Package" && !checkOutVal) {
       showToast("toastCheckOut");
       return;
     }
