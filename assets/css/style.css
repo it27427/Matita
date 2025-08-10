@@ -840,7 +840,6 @@ button,
 
 .vector-map {
   position: absolute;
-  /* top: var(--s250); */
   width: var(--s300);
   margin-right: auto;
   margin-left: auto;
@@ -1562,6 +1561,16 @@ h3 {
 }
 /* ===== HOME-PAGE-STYLES-END ===== */
 
+/* ===== ROOM-PAGE-STYLES-START ===== */
+
+.main {
+  background-color: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== ROOM-PAGE-STYLES-END ===== */
+
 /* ===== SINGLE-ROOM-STYLES-START ===== */
 
 .intro-title {
@@ -1662,9 +1671,6 @@ h3 {
 }
 
 /* ===== SINGLE-ROOM-STYLES-END ===== */
-
-/* ===== ROOM-PAGE-STYLES-START ===== */
-/* ===== ROOM-PAGE-STYLES-END ===== */
 
 /* ===== ABOUT-PAGE-STYLES-START ===== */
 /* ===== ABOUT-PAGE-STYLES-END ===== */
