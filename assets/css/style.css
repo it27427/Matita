@@ -1993,6 +1993,10 @@ h3 {
   .intro-title.rooms {
     font-size: var(--s32);
   }
+
+  .booking-area {
+    padding-inline: var(--s10);
+  }
 }
 
 /* MOBILE-RESPONSIVE-STYLES */

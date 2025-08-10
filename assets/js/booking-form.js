@@ -1,128 +1,132 @@
-/*========================================================================================
-
-* File: assets/js/booking-form.js
-* This script handles the booking form functionality, including package selection,
-* Datepicker initialization, form validation, and submission handling.
-* It also manages the visibility of form blocks based on the selected package.
-* Ensure the script runs after the DOM is fully loaded
-* and that Bootstrap's JavaScript is included for toasts.
-* The script validates the selected package, check-in and check-out dates,
-* and the number of adult guests, showing error messages if any fields are invalid.
-* Showing a success message upon successful submission.
-* Upon successful validation, it displays a success message and can redirect to another page.
-
-\=======================================================================================*/
-
 "use strict";
 
+/**
+ * File: assets/js/booking-form.js
+ * Booking Form Script
+ * Handles:
+ * - Dynamic display of form fields based on selected package
+ * - Validation of form inputs on submission
+ * - Displaying Bootstrap toast notifications for errors and success
+ * - Redirecting on successful form submission
+ */
+
 document.addEventListener("DOMContentLoaded", () => {
-  // Select form elements
+  // Select key form elements
   const form = document.querySelector(".booking-form");
   const packagesSelect = document.querySelector("#packages");
   const checkIn = document.querySelector("#check-in");
   const checkOut = document.querySelector("#check-out");
   const adults = document.querySelector("#adult-guests");
 
-  // Initialize datepicker for check-in and check-out
+  // Form blocks that show/hide dynamically
   const formBlocks = document.querySelectorAll(".form-block");
+  // Submit button container block
   const submitBlock = document.querySelector(".submit-block");
+  // Check-out date block (only shown for certain packages)
   const checkOutBlock = document.querySelector('[data-block="checkout"]');
 
-  // Reset form visibility function
+  /**
+   * Resets the form fields visibility:
+   * - Hides all dynamic form blocks
+   * - Hides the submit button
+   */
   const resetFormVisibility = () => {
-    formBlocks.forEach((block) => {
-      block.classList.add("d-none");
-    });
-
-    submitBlock.classList.remove("col-sm-6", "col-md-4");
-    submitBlock.classList.add("col-12");
+    formBlocks.forEach((block) => block.classList.add("d-none"));
     submitBlock.classList.add("d-none");
   };
 
-  // Initial state
+  // Initialize form with all dynamic parts hidden
   resetFormVisibility();
 
-  // Handle package selection change
+  /**
+   * Event listener for package selection changes
+   * Shows/hides relevant fields based on the chosen package
+   */
   packagesSelect.addEventListener("change", () => {
     const selected = packagesSelect.value;
+
+    // Reset visibility before applying new rules
     resetFormVisibility();
 
+    // If no valid package selected, exit early
     if (!selected || selected === "Select Package") return;
 
-    // Always show these blocks
+    // Get references to all form blocks that may be shown
     const checkinBlock = document.querySelector('[data-block="checkin"]');
     const adultsBlock = document.querySelector('[data-block="adults"]');
     const childrenBlock = document.querySelector('[data-block="children"]');
     const othersBlock = document.querySelector('[data-block="others"]');
 
-    // Show relevant blocks based on selection
+    // Always show check-in, adults, children, and others blocks
     checkinBlock.classList.remove("d-none");
     adultsBlock.classList.remove("d-none");
     childrenBlock.classList.remove("d-none");
     othersBlock.classList.remove("d-none");
 
-    // Handle specific package logic
+    // For "Day Long" and "Evening" packages:
+    // - Hide check-out block
+    // - Show submit button
     if (selected === "Day Long" || selected === "Evening") {
       checkOutBlock.classList.add("d-none");
-      checkOut.value = "";
-
-      // Set submit button style to 3 per row
-      submitBlock.classList.remove("col-12");
-      submitBlock.classList.add("col-sm-6", "col-md-4");
+      checkOut.value = ""; // Clear check-out input value
       submitBlock.classList.remove("d-none");
     }
 
-    // Handle "Stay Night Package" package
+    // For "Stay Night Package":
+    // - Show check-out block
+    // - Show submit button
     if (selected === "Stay Night Package") {
       checkOutBlock.classList.remove("d-none");
-
-      // Make button full width (new row)
-      submitBlock.classList.remove("col-sm-6", "col-md-4");
-      submitBlock.classList.add("col-12");
       submitBlock.classList.remove("d-none");
     }
   });
 
-  // Toast helper function
+  /**
+   * Helper function to show Bootstrap toasts by ID
+   * @param {string} id - The ID of the toast element to show
+   */
   function showToast(id) {
     const toastEl = document.getElementById(id);
     const toast = new bootstrap.Toast(toastEl);
     toast.show();
   }
 
-  // Handle form submission
+  /**
+   * Form submission handler
+   * Validates inputs and shows appropriate toast messages
+   * Redirects on successful validation
+   */
   form.addEventListener("submit", (e) => {
-    // Prevent default form submission
-    e.preventDefault();
+    e.preventDefault(); // Prevent default form submission
 
-    // Validate inputs
+    // Get trimmed values from inputs
     const selectedPackage = packagesSelect.value;
     const checkInVal = checkIn.value.trim();
     const checkOutVal = checkOut.value.trim();
     const adultVal = adults.value.trim();
 
-    // Check if a package is selected
+    // Validate check-in date is entered
     if (!checkInVal) {
       showToast("toastCheckIn");
-      return;
+      return; // Stop submission
     }
 
-    // Check if check-out is required
+    // Validate check-out date if "Stay Night Package" selected
     if (selectedPackage === "Stay Night Package" && !checkOutVal) {
       showToast("toastCheckOut");
       return;
     }
 
-    // Check if adults are specified
+    // Validate adults field is > 0
     if (!adultVal || parseInt(adultVal) <= 0) {
       showToast("toastAdults");
       return;
     }
 
-    // If all validations pass, show success toast
+    // All validations passed — show success toast
     showToast("toastSuccess");
 
-    // Optionally, redirect after a delay
+    // Redirect after a 2 second delay
     setTimeout(() => {
       window.location.href = "available-rooms.html";
     }, 2000);
