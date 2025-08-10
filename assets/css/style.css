@@ -124,6 +124,7 @@
   --bg-light: #edece8;
   --text-primary: #121110;
   --theme-primary: #c65624;
+  --theme-secondary: #a3441a;
   --bg-newsletter: #2d4d3a;
   --overlay-color: rgba(0, 0, 0, 0.5);
   --overlay-color-dark: rgba(0, 0, 0, 0.7);
@@ -142,6 +143,7 @@
   --image-overlay-bg: rgba(18, 17, 16, 0.5);
   --room-overlay-bg: rgba(0, 0, 0, 0);
   --room-overlay-hover-bg: rgba(198, 86, 36, 0.6);
+  --map-bg: rgb(229, 227, 223);
 
   /* Fonts */
   --font-body: "Centra No1", sans-serif;
@@ -456,7 +458,7 @@ button,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: solid var(--s2);
+  border: solid var(--border-width);
   font: 500 var(--s15) / 1 var(--font-book);
   padding: var(--s16) var(--s30) var(--s14);
   height: var(--s48);
@@ -485,7 +487,8 @@ button,
   color: var(--white);
 }
 
-.btn-primary {
+.btn-primary,
+.btn-primary-outline {
   background-color: var(--theme-primary);
   border-color: var(--theme-primary);
   color: var(--white);
@@ -493,6 +496,11 @@ button,
 }
 
 .btn-primary:hover {
+  background-color: var(--theme-secondary);
+  color: var(--white);
+}
+
+.btn-primary-outline:hover {
   background-color: transparent;
   color: var(--theme-primary);
 }
@@ -2376,6 +2384,10 @@ input[type="radio"] {
 
   .faqtitle {
     font-size: var(--s14);
+  }
+
+  .roomcontainer .btn-cta {
+    width: var(--full-width);
   }
 }
 
