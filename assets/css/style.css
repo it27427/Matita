@@ -126,13 +126,14 @@
   --theme-primary: #c65624;
   --bg-newsletter: #2d4d3a;
   --overlay-color: rgba(0, 0, 0, 0.5);
-  --overlay-color-light: rgba(0, 0, 0, 0.3);
   --overlay-color-dark: rgba(0, 0, 0, 0.7);
   --input-focus: rgba(237, 236, 232, 0.1);
   --border-left-color: rgba(255, 255, 255, 0.3);
   --foot-border-color: rgba(18, 17, 16, 0.3);
   --block-quote-border-color: #e2e2e2;
 
+  --overlay-color-light: rgba(0, 0, 0, 0.3);
+  --overlay-light-bg: rgba(18, 17, 16, 0.25);
   --image-overlay-bg: rgba(18, 17, 16, 0.5);
   --room-overlay-bg: rgba(0, 0, 0, 0);
   --room-overlay-hover-bg: rgba(198, 86, 36, 0.6);
@@ -149,6 +150,7 @@
 
   --bg-1-position: 50% 50%;
   --bg-2-position: 50% 70%;
+  --bg-3-position: 50% 64%;
 
   /* Sizing */
   --transition: all 500ms ease-in-out;
@@ -596,6 +598,10 @@ button,
 
 /* Hero Section */
 .home-hero-area {
+  background-repeat: var(--bg-repeat);
+  background-size: var(--bg-size);
+  background-position: var(--bg-3-position);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -757,16 +763,12 @@ button,
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--overlay-color);
+  background-color: var(--image-overlay-bg);
   z-index: 1;
 }
 
 .overlay-light {
   background-color: var(--overlay-color-light);
-}
-
-.overlay-img {
-  background-color: var(--image-overlay-bg);
 }
 
 /* ===== HOME-PAGE-STYLES-END ===== */
