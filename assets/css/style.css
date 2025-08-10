@@ -1616,6 +1616,49 @@ h3 {
   height: var(--full-vh);
 }
 
+.single-room-details {
+  background-color: var(--bg-light);
+}
+
+.facilities-grid {
+  display: grid;
+  width: var(--full-width);
+  justify-content: flex-start;
+  grid-auto-columns: 1fr;
+  grid-column-gap: var(--s16);
+  grid-row-gap: var(--s16);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.facilities {
+  grid-row-start: span 1;
+  grid-row-end: span 1;
+  grid-column-start: span 1;
+  grid-column-end: span 1;
+}
+
+.room-richtext {
+  font-family: var(--font-body);
+  font-size: var(--s15);
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.room-richtext figure {
+  display: flex;
+  align-items: center;
+  gap: var(--s14);
+  padding-right: 0;
+  margin-block-end: var(--s10);
+}
+
+.room-richtext figure img {
+  width: var(--s18);
+  height: var(--s18);
+  opacity: 0.8;
+}
+
 /* ===== SINGLE-ROOM-STYLES-END ===== */
 
 /* ===== ROOM-PAGE-STYLES-START ===== */
@@ -1738,8 +1781,12 @@ h3 {
     height: var(--s150);
     flex-direction: column;
     align-items: flex-start;
-    max-width: 40%;
+    max-width: 50%;
     margin-inline: auto;
+  }
+
+  .intro-title {
+    width: var(--full-width);
   }
 }
 
@@ -1901,7 +1948,6 @@ h3 {
     margin-block-end: 0;
   }
 
-  .intro-title,
   .room-details-wrapper {
     width: var(--full-width);
   }
@@ -1949,6 +1995,10 @@ h3 {
 
   .hero-room-features {
     max-width: var(--full-width);
+  }
+
+  .facilities-grid {
+    grid-template-columns: 1fr;
   }
 }
 
