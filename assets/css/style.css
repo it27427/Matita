@@ -2112,6 +2112,60 @@ input[type="radio"] {
   transform: scale(1.1);
 }
 
+.baguetteBox-button {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  opacity: 1;
+  border: 0;
+  box-shadow: none;
+  transition: var(--transition);
+}
+
+.baguetteBox-button svg {
+  position: static;
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.baguetteBox-button#close-button,
+.baguetteBox-button#previous-button,
+.baguetteBox-button#next-button {
+  background-color: var(--theme-primary);
+  width: var(--s48);
+  height: var(--s48);
+}
+
+.baguetteBox-button#close-button::after,
+.baguetteBox-button#next-button::after,
+.baguetteBox-button#previous-button::after {
+  position: absolute;
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+}
+
+.baguetteBox-button#close-button::after {
+  content: "\f00d";
+}
+
+.baguetteBox-button#previous-button::after {
+  content: "\f053";
+}
+
+.baguetteBox-button#next-button::after {
+  content: "\f054";
+}
+
+.baguetteBox-button#close-button:hover,
+.baguetteBox-button#previous-button:hover,
+.baguetteBox-button#next-button:hover {
+  background-color: var(--theme-secondary);
+}
+
 /* ===== GALLERY-PAGE-STYLES-END ===== */
 
 /* ===== RESPONSIVE DESIGN ===== */
