@@ -226,6 +226,7 @@
   --s400: 400px;
   --s420: 420px;
   --s450: 450px;
+  --s464: 464px;
   --s580: 580px;
   --s600: 600px;
   --s750: 750px;
@@ -2101,6 +2102,9 @@ input[type="radio"] {
 }
 
 .gallery-thumb .gallery-link img {
+  width: var(--full-width);
+  height: var(--full-height);
+  object-fit: cover;
   transition: var(--transition);
 }
 
