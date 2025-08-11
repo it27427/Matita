@@ -224,6 +224,7 @@
   --s350: 350px;
   --s390: 390px;
   --s400: 400px;
+  --s420: 420px;
   --s450: 450px;
   --s580: 580px;
   --s600: 600px;
@@ -395,7 +396,13 @@ button,
 
 #main-header.fixed {
   position: fixed;
+  height: var(--s100);
   background: var(--bg-newsletter);
+}
+
+#main-header.fixed .brand-logo-link {
+  width: var(--s100);
+  height: var(--s100);
 }
 
 #main-header.hidden {
@@ -404,7 +411,7 @@ button,
 
 .header {
   width: var(--full-width);
-  height: var(--s80);
+  height: var(--s150);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -420,8 +427,8 @@ button,
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--s64);
-  height: var(--s64);
+  width: var(--s100);
+  height: var(--s100);
   overflow: hidden;
 }
 
@@ -2065,6 +2072,44 @@ input[type="radio"] {
 
 /* ===== CONTACT-PAGE-STYLES-END ===== */
 
+/* ===== GALLERY-PAGE-STYLES-START ===== */
+
+.gallery-thumb {
+  width: var(--full-width);
+  height: var(--full-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-thumb.thumb-1 {
+  height: var(--s220);
+}
+
+.gallery-thumb.thumb-2 {
+  height: var(--s420);
+}
+
+.gallery-thumb .gallery-link {
+  width: var(--full-width);
+  height: var(--full-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-thumb .gallery-link img {
+  transition: var(--transition);
+}
+
+.gallery-thumb .gallery-link:hover img {
+  transform: scale(1.1);
+}
+
+/* ===== GALLERY-PAGE-STYLES-END ===== */
+
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Optional: at very large screens, limit max columns */
@@ -2094,6 +2139,7 @@ input[type="radio"] {
   #main-header {
     position: fixed;
     background: var(--bg-newsletter);
+    height: var(--s80);
   }
 
   .hero-headline {
@@ -2218,6 +2264,15 @@ input[type="radio"] {
 
   .loader-subtitle {
     font-size: var(--s16);
+  }
+
+  .header {
+    height: var(--s100);
+  }
+
+  .brand-logo-link {
+    width: var(--s100);
+    height: var(--s100);
   }
 }
 
