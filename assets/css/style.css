@@ -2229,6 +2229,20 @@ input[type="radio"] {
 
 /* ===== ACTIVITIES-PAGE-STYLES-END ===== */
 
+/* ===== BOOKING-FORM-STYLES-END ===== */
+
+.bookingdetails {
+  background-color: var(--bg-light);
+}
+
+.bookinglist {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s8);
+}
+
+/* ===== BOOKING-PAGE-STYLES-END ===== */
+
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Optional: at very large screens, limit max columns */

@@ -317,6 +317,7 @@
             ></div>
           </div>
 
+          <!-- CONTACT-FORM -->
           <form id="contact-form" class="contact-form">
             <p class="mb-3">
               Fill the form to get in touch, we'll get back to you as soon as
@@ -331,6 +332,7 @@
                   class="text-input"
                   maxlength="256"
                   id="username"
+                  autocomplete="off"
                 />
               </div>
 
@@ -342,6 +344,7 @@
                   class="text-input"
                   maxlength="256"
                   id="surname"
+                  autocomplete="off"
                 />
               </div>
             </div>
@@ -354,6 +357,7 @@
                 class="text-input"
                 maxlength="256"
                 id="email"
+                autocomplete="off"
               />
             </div>
 
@@ -364,6 +368,7 @@
                 class="text-input"
                 maxlength="256"
                 id="subject"
+                autocomplete="off"
               />
             </div>
 
@@ -376,16 +381,18 @@
                 class="contact-textarea"
                 spellcheck="false"
                 data-gramm="false"
+                autocomplete="off"
               ></textarea>
             </div>
 
             <label class="checkbox-field">
               <input
                 type="checkbox"
-                id="contact-checkbox"
+                id="disclaimer-check"
                 class="contact-checkbox"
+                autocomplete="off"
               />
-              <span for="contact-checkbox" class="disclaimer-text">
+              <span for="disclaimer-check" class="disclaimer-text">
                 I accept Matita's
                 <span class="contact-color">Terms and Conditions</span>
               </span>
@@ -810,6 +817,125 @@
           ></button>
         </div>
       </div>
+
+      <!-- ✅ CONTACT-FORM-TOASTS -->
+
+      <!-- ❌ Username Toast -->
+      <div
+        id="toastUsername"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Please enter your name.</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+
+      <!-- ❌ Email Required Toast -->
+      <div
+        id="toastEmailRequired"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Please enter your email address.</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+
+      <!-- ❌ Email Invalid Toast -->
+      <div
+        id="toastEmailInvalid"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Please enter a valid email address.</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+
+      <!-- ❌ Subject Toast -->
+      <div
+        id="toastSubject"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Please enter a subject.</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+
+      <!-- ❌ Message Toast -->
+      <div
+        id="toastMessage"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Please enter your message.</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+
+      <!-- ❌ Terms & Conditions Toast -->
+      <div
+        id="toastTerms"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            Please accept the Terms & Conditions before submitting.
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+
+      <!-- ✅ Success Toast -->
+      <div
+        id="toastSuccess"
+        class="toast align-items-center text-white bg-success border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            Your message has been
+            <span class="text-redirect">successfully</span>
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
     </div>
 
     <!-- BOOTSTRAP-JS -->
@@ -826,6 +952,9 @@
 
     <!-- HEADER-JS -->
     <script src="assets/js/header.js"></script>
+
+    <!-- CONTACT-FORM-JS -->
+    <script src="assets/js/contact-form.js"></script>
 
     <!-- SUBSCRIPTION-FORM-JS -->
     <script src="assets/js/subscription-form.js"></script>
