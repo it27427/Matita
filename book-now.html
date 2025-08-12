@@ -13,6 +13,8 @@
     />
     <!-- FONTAWESOME-CSS -->
     <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- DATEPICKER-CSS -->
+    <link rel="stylesheet" href="assets/css/datepicker.min.css" />
     <!-- BOOTSTRAP-CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- BACK-TO-TOP-CSS -->
@@ -293,6 +295,86 @@
       <div class="overlay"></div>
     </section>
     <!-- HOME-HERO-AREA-END -->
+
+    <!-- BOOK-NOW-START -->
+    <section class="booknow section homesection-2 contact">
+      <div class="container">
+        <h2 class="text-center mb-4 h3-small">
+          Choose Date and Number of Participants
+        </h2>
+
+        <!-- BOOK-FORM-START -->
+        <form id="bookform" class="contact-form bookform" novalidate>
+          <div class="inner-input-wrapper">
+            <label for="selectdate" class="contact-label"> Select Date </label>
+            <input
+              type="text"
+              name="selectdate"
+              id="selectdate"
+              class="datepicker form-control"
+              placeholder="Select Date"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="inner-input-wrapper">
+            <label for="adult" class="contact-label"> Adult </label>
+            <input
+              type="number"
+              name="adult"
+              id="adult"
+              class="form-control"
+              placeholder="1"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="inner-input-wrapper">
+            <label for="children" class="contact-label"> Children </label>
+            <input
+              type="number"
+              name="children"
+              id="children"
+              class="form-control"
+              placeholder="0"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="inner-input-wrapper">
+            <label for="kids" class="contact-label"> Kids </label>
+            <input
+              type="number"
+              name="kids"
+              id="kids"
+              class="form-control"
+              placeholder="0"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="inner-input-wrapper">
+            <label for="driver" class="contact-label"> Driver Or Others </label>
+            <input
+              type="number"
+              name="driver"
+              id="driver"
+              class="form-control"
+              placeholder="0"
+              autocomplete="off"
+            />
+          </div>
+
+          <!-- SUBMIT CTA -->
+          <div class="submit-block mt-4 mt-md-0">
+            <button type="submit" class="btn-cta btn-primary w-100">
+              Check Availability
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- BOOK-NOW-END -->
 
     <!-- NEWSLETTER-SECTION-START -->
     <section class="newsletter">
@@ -633,6 +715,66 @@
           ></button>
         </div>
       </div>
+
+      <!-- ❌ Date Required Toast -->
+      <div
+        id="toastDate"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Please select a date.</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+
+      <!-- ❌ Adult Required Toast -->
+      <div
+        id="toastAdult"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Aduld is required.</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+
+      <!-- ✅ Success Toast -->
+      <div
+        id="toastSuccess"
+        class="toast align-items-center text-white bg-success border-0"
+        role="alert"
+        aria-live="polite"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            Booking validated successfully
+            <span class="text-redirect">Redirecting</span>
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
     </div>
 
     <!-- BOOTSTRAP-JS -->
@@ -649,6 +791,13 @@
 
     <!-- HEADER-JS -->
     <script src="assets/js/header.js"></script>
+
+    <!-- DATEPICKER-JS -->
+    <script src="assets/js/datepicker-full.min.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+
+    <!-- BOOK-NOW-FORM-JS -->
+    <script src="assets/js/booknow-form.js"></script>
 
     <!-- SUBSCRIPTION-FORM-JS -->
     <script src="assets/js/subscription-form.js"></script>

@@ -2260,6 +2260,17 @@ input[type="radio"] {
   font-size: var(--s15);
 }
 
+.bookform {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--s20);
+  align-items: end;
+}
+
+.bookform .btn-cta {
+  font-size: var(--s14);
+}
+
 /* ===== BOOKING-PAGE-STYLES-END ===== */
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -2443,10 +2454,20 @@ input[type="radio"] {
   .mission-image-div.vertical {
     height: var(--s450);
   }
+
+  .bookform {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bookform .submit-block {
+    grid-column: auto;
+    justify-self: start;
+    width: var(--full-width);
+  }
 }
 
 /* Optional: at smaller tablets */
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .booking-grid {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -2668,6 +2689,11 @@ input[type="radio"] {
 
   .mission-grid-element.padding-left.margin-top {
     margin-block-start: var(--s32);
+  }
+
+  .bookform {
+    grid-template-columns: 1fr;
+    align-items: end;
   }
 }
 
