@@ -2241,6 +2241,25 @@ input[type="radio"] {
   gap: var(--s8);
 }
 
+.bookinfos .bookinglist,
+.foodmenus,
+.activitiesinfo {
+  background-color: var(--white);
+  padding: var(--s18);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  height: var(--full-height);
+}
+
+.foodmenus h5 {
+  font-family: var(--font-body);
+}
+
+.bookinglist-item,
+.foodmenu-item,
+.activitylist-item {
+  font-size: var(--s15);
+}
+
 /* ===== BOOKING-PAGE-STYLES-END ===== */
 
 /* ===== RESPONSIVE DESIGN ===== */
