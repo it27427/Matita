@@ -306,30 +306,25 @@
                 <strong>Date:</strong> 2025-08-12
               </li>
               <li class="bookinglist-item">
-                <strong>Date:</strong>
+                <strong>Package:</strong> Day Long Package
               </li>
               <li class="bookinglist-item">
-                <strong>Date:</strong>
+                <strong>Check-in:</strong> 2025-08-12
+              </li>
+              <li class="bookinglist-item"><strong>Adult:</strong> 2</li>
+              <li class="bookinglist-item"><strong>Children:</strong> 0</li>
+              <li class="bookinglist-item"><strong>Kids:</strong> 0</li>
+              <li class="bookinglist-item">
+                <strong>Driver / Others:</strong> 0
               </li>
               <li class="bookinglist-item">
-                <strong>Date:</strong>
-              </li>
-              <li class="bookinglist-item">
-                <strong>Date:</strong>
-              </li>
-              <li class="bookinglist-item">
-                <strong>Date:</strong>
-              </li>
-              <li class="bookinglist-item">
-                <strong>Date:</strong>
-              </li>
-              <li class="bookinglist-item">
-                <strong>Date:</strong>
+                <strong>Total Amount:</strong> 3000&#2547;
               </li>
             </ul>
           </div>
 
-          <form id="contact-form" class="contact-form">
+          <!-- BOOKING-FORM-END -->
+          <form id="book-form" class="contact-form">
             <h3 class="mb-4">Personal Informations</h3>
 
             <div class="personalinfo">
@@ -736,7 +731,108 @@
         </div>
       </div>
 
-      <!-- ✅ CONTACT-FORM-TOASTS -->
+      <!-- ✅ BOOK-FORM-TOASTS -->
+      <!-- ❌ Full Name Toast -->
+      <div
+        id="toastFullName"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Please enter your full name.</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+
+      <!-- ❌ Email Required Toast -->
+      <div
+        id="toastEmailRequired"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Please enter your email address.</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+
+      <!-- ❌ Email Invalid Toast -->
+      <div
+        id="toastEmailInvalid"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Please enter a valid email address.</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+
+      <!-- ❌ Phone Number Toast -->
+      <div
+        id="toastPhoneNumber"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            Please enter a valid phone number (11 digits).
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+
+      <!-- ❌ Terms & Conditions Toast -->
+      <div
+        id="toastTerms"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            Please accept the Terms & Conditions before continuing.
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
+
+      <!-- ✅ Success Toast -->
+      <div
+        id="toastSuccess"
+        class="toast align-items-center text-white bg-success border-0"
+        role="alert"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            <span class="text-redirect">Proceeding</span>
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+          ></button>
+        </div>
+      </div>
     </div>
 
     <!-- BOOTSTRAP-JS -->
@@ -753,6 +849,9 @@
 
     <!-- HEADER-JS -->
     <script src="assets/js/header.js"></script>
+
+    <!-- BOOK-FORM-JS -->
+    <script src="assets/js/book-form.js"></script>
 
     <!-- SUBSCRIPTION-FORM-JS -->
     <script src="assets/js/subscription-form.js"></script>
