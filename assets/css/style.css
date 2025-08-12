@@ -2168,6 +2168,19 @@ input[type="radio"] {
 
 /* ===== GALLERY-PAGE-STYLES-END ===== */
 
+/* ===== ACTIVITIES-PAGE-STYLES-START ===== */
+
+.activities h3 {
+  font-family: var(--font-book);
+  margin-bottom: var(--s32);
+}
+
+.activities-list {
+  columns: 3;
+}
+
+/* ===== ACTIVITIES-PAGE-STYLES-END ===== */
+
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Optional: at very large screens, limit max columns */
@@ -2544,6 +2557,10 @@ input[type="radio"] {
 
   .loader-subtitle {
     font-size: var(--s15);
+  }
+
+  .activities-list {
+    columns: 1;
   }
 }
 
