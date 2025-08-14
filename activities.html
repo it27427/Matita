@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <!-- BOOTSTRAP-CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- SWIPER-CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!-- BACK-TO-TOP-CSS -->
     <link rel="stylesheet" href="assets/css/backtotop.css" />
     <!-- CUSTOM-CSS -->
@@ -303,76 +305,428 @@
           <div class="col-12">
             <h2 class="text-center mb-5">Some of our activities</h2>
 
-            <h3>Basic Level:</h3>
+            <!-- ACTIVITIES-LIST -->
+            <div class="activity">
+              <h3>Basic Level:</h3>
 
-            <ul class="activities-list">
-              <li class="activities-list-item">* Camp Site Setup</li>
-              <li class="activities-list-item">* Nature Indulgence</li>
-              <li class="activities-list-item">* Tripod</li>
-              <li class="activities-list-item">* Water pong</li>
-              <li class="activities-list-item">* Flying Fox</li>
-              <li class="activities-list-item">* Capture the flags</li>
-              <li class="activities-list-item">* Tic Tack Toe</li>
-              <li class="activities-list-item">* Big Foot</li>
-              <li class="activities-list-item">* Human vehicle</li>
-              <li class="activities-list-item">* Nature hike</li>
-              <li class="activities-list-item">* Boating</li>
-              <li class="activities-list-item">* Tug of War</li>
-              <li class="activities-list-item">* Identification</li>
-              <li class="activities-list-item">
-                * Hill Trekking (circuit trail)
-              </li>
-              <li class="activities-list-item">* Zip Lining</li>
-              <li class="activities-list-item">* River pass (version 1)</li>
-              <li class="activities-list-item">* Synchro Footing</li>
-              <li class="activities-list-item">
-                * Capture the Flags (version 1)
-              </li>
-              <li class="activities-list-item">* Ring Pass • Cycling</li>
-              <li class="activities-list-item">* Obstacle Course</li>
-              <li class="activities-list-item">* Turn Over</li>
-              <li class="activities-list-item">* Letter Post</li>
-              <li class="activities-list-item">* Cat and Mouse Race</li>
-              <li class="activities-list-item">* Marble Pass</li>
-              <li class="activities-list-item">* Liquid Pass (version 1)</li>
-              <li class="activities-list-item">* Treasure Hunt (version 1)</li>
-              <li class="activities-list-item">* Paddle Boating</li>
-              <li class="activities-list-item">* Screw Driver (version 1)</li>
-              <li class="activities-list-item">* Spin Goal</li>
-              <li class="activities-list-item">* Belt Race</li>
-              <li class="activities-list-item">* Balloon Race (queue)</li>
-              <li class="activities-list-item">* Balloon Burst (version 1)</li>
-              <li class="activities-list-item">* Balloon Burst (version 2)</li>
-              <li class="activities-list-item">
-                * Tanis Ball/Balloon Race (pair leaves)
-              </li>
-              <li class="activities-list-item">* Tic Tack Toe (version 1)</li>
-              <li class="activities-list-item">
-                * Tic Tack Toe (table & water)
-              </li>
-              <li class="activities-list-item">* Tug of War (version 1)</li>
-              <li class="activities-list-item">* Screw Driver</li>
-              <li class="activities-list-item">* Archery (paid)</li>
-              <li class="activities-list-item">* Human Pass (version 1)</li>
-              <li class="activities-list-item">* Human Knot (version 1)</li>
-              <li class="activities-list-item">* Signe Pass</li>
-              <li class="activities-list-item">* Slippery Climbing</li>
-              <li class="activities-list-item">* Sudden Horn</li>
-              <li class="activities-list-item">* Blowing Passage</li>
-              <li class="activities-list-item">* Tap the Ball</li>
-              <li class="activities-list-item">* Pyramid</li>
-              <li class="activities-list-item">* Running Shirt</li>
-              <li class="activities-list-item">* Cookie Face</li>
-              <li class="activities-list-item">* Dried Leaves Art</li>
-              <li class="activities-list-item">* Painting</li>
-              <li class="activities-list-item">* Muddy Art</li>
-              <li class="activities-list-item">* Cone Ball</li>
-              <li class="activities-list-item">* Zigzag Running</li>
-              <li class="activities-list-item">* Pulling up Cone</li>
-              <li class="activities-list-item">* Kayaing</li>
-              <li class="activities-list-item">* Boating</li>
-              <li class="activities-list-item">* Raft Making</li>
-            </ul>
+              <ul class="activities-list">
+                <li class="activities-list-item">* Camp Site Setup</li>
+                <li class="activities-list-item">* Nature Indulgence</li>
+                <li class="activities-list-item">* Tripod</li>
+                <li class="activities-list-item">* Water pong</li>
+                <li class="activities-list-item">* Flying Fox</li>
+                <li class="activities-list-item">* Capture the flags</li>
+                <li class="activities-list-item">* Tic Tack Toe</li>
+                <li class="activities-list-item">* Big Foot</li>
+                <li class="activities-list-item">* Human vehicle</li>
+                <li class="activities-list-item">* Nature hike</li>
+                <li class="activities-list-item">* Boating</li>
+                <li class="activities-list-item">* Tug of War</li>
+                <li class="activities-list-item">* Identification</li>
+                <li class="activities-list-item">
+                  * Hill Trekking (circuit trail)
+                </li>
+                <li class="activities-list-item">* Zip Lining</li>
+                <li class="activities-list-item">* River pass (version 1)</li>
+                <li class="activities-list-item">* Synchro Footing</li>
+                <li class="activities-list-item">
+                  * Capture the Flags (version 1)
+                </li>
+                <li class="activities-list-item">* Ring Pass • Cycling</li>
+                <li class="activities-list-item">* Obstacle Course</li>
+                <li class="activities-list-item">* Turn Over</li>
+                <li class="activities-list-item">* Letter Post</li>
+                <li class="activities-list-item">* Cat and Mouse Race</li>
+                <li class="activities-list-item">* Marble Pass</li>
+                <li class="activities-list-item">* Liquid Pass (version 1)</li>
+                <li class="activities-list-item">
+                  * Treasure Hunt (version 1)
+                </li>
+                <li class="activities-list-item">* Paddle Boating</li>
+                <li class="activities-list-item">* Screw Driver (version 1)</li>
+                <li class="activities-list-item">* Spin Goal</li>
+                <li class="activities-list-item">* Belt Race</li>
+                <li class="activities-list-item">* Balloon Race (queue)</li>
+                <li class="activities-list-item">
+                  * Balloon Burst (version 1)
+                </li>
+                <li class="activities-list-item">
+                  * Balloon Burst (version 2)
+                </li>
+                <li class="activities-list-item">
+                  * Tanis Ball/Balloon Race (pair leaves)
+                </li>
+                <li class="activities-list-item">* Tic Tack Toe (version 1)</li>
+                <li class="activities-list-item">
+                  * Tic Tack Toe (table & water)
+                </li>
+                <li class="activities-list-item">* Tug of War (version 1)</li>
+                <li class="activities-list-item">* Screw Driver</li>
+                <li class="activities-list-item">* Archery (paid)</li>
+                <li class="activities-list-item">* Human Pass (version 1)</li>
+                <li class="activities-list-item">* Human Knot (version 1)</li>
+                <li class="activities-list-item">* Signe Pass</li>
+                <li class="activities-list-item">* Slippery Climbing</li>
+                <li class="activities-list-item">* Sudden Horn</li>
+                <li class="activities-list-item">* Blowing Passage</li>
+                <li class="activities-list-item">* Tap the Ball</li>
+                <li class="activities-list-item">* Pyramid</li>
+                <li class="activities-list-item">* Running Shirt</li>
+                <li class="activities-list-item">* Cookie Face</li>
+                <li class="activities-list-item">* Dried Leaves Art</li>
+                <li class="activities-list-item">* Painting</li>
+                <li class="activities-list-item">* Muddy Art</li>
+                <li class="activities-list-item">* Cone Ball</li>
+                <li class="activities-list-item">* Zigzag Running</li>
+                <li class="activities-list-item">* Pulling up Cone</li>
+                <li class="activities-list-item">* Kayaing</li>
+                <li class="activities-list-item">* Boating</li>
+                <li class="activities-list-item">* Raft Making</li>
+              </ul>
+            </div>
+
+            <div class="mb-5"></div>
+
+            <!-- ACTIVITIES-LIST -->
+            <div class="activity">
+              <h3>Business Level:</h3>
+
+              <ul class="activities-list">
+                <li class="activities-list-item">* Camp Site Setup</li>
+                <li class="activities-list-item">* Nature Indulgence</li>
+                <li class="activities-list-item">* Tripod</li>
+                <li class="activities-list-item">* Water pong</li>
+                <li class="activities-list-item">* Flying Fox</li>
+                <li class="activities-list-item">* Capture the flags</li>
+                <li class="activities-list-item">* Tic Tack Toe</li>
+                <li class="activities-list-item">* Big Foot</li>
+                <li class="activities-list-item">* Human vehicle</li>
+                <li class="activities-list-item">* Nature hike</li>
+                <li class="activities-list-item">* Boating</li>
+                <li class="activities-list-item">* Tug of War</li>
+                <li class="activities-list-item">* Identification</li>
+                <li class="activities-list-item">
+                  * Hill Trekking (circuit trail)
+                </li>
+                <li class="activities-list-item">* Zip Lining</li>
+                <li class="activities-list-item">* River pass (version 1)</li>
+                <li class="activities-list-item">* Synchro Footing</li>
+                <li class="activities-list-item">
+                  * Capture the Flags (version 1)
+                </li>
+                <li class="activities-list-item">* Ring Pass • Cycling</li>
+                <li class="activities-list-item">* Obstacle Course</li>
+                <li class="activities-list-item">* Turn Over</li>
+                <li class="activities-list-item">* Letter Post</li>
+                <li class="activities-list-item">* Cat and Mouse Race</li>
+                <li class="activities-list-item">* Marble Pass</li>
+                <li class="activities-list-item">* Liquid Pass (version 1)</li>
+                <li class="activities-list-item">
+                  * Treasure Hunt (version 1)
+                </li>
+                <li class="activities-list-item">* Paddle Boating</li>
+                <li class="activities-list-item">* Screw Driver (version 1)</li>
+                <li class="activities-list-item">* Spin Goal</li>
+                <li class="activities-list-item">* Belt Race</li>
+                <li class="activities-list-item">* Balloon Race (queue)</li>
+                <li class="activities-list-item">
+                  * Balloon Burst (version 1)
+                </li>
+                <li class="activities-list-item">
+                  * Balloon Burst (version 2)
+                </li>
+                <li class="activities-list-item">
+                  * Tanis Ball/Balloon Race (pair leaves)
+                </li>
+                <li class="activities-list-item">* Tic Tack Toe (version 1)</li>
+                <li class="activities-list-item">
+                  * Tic Tack Toe (table & water)
+                </li>
+                <li class="activities-list-item">* Tug of War (version 1)</li>
+                <li class="activities-list-item">* Screw Driver</li>
+                <li class="activities-list-item">* Archery (paid)</li>
+                <li class="activities-list-item">* Human Pass (version 1)</li>
+                <li class="activities-list-item">* Human Knot (version 1)</li>
+                <li class="activities-list-item">* Signe Pass</li>
+                <li class="activities-list-item">* Slippery Climbing</li>
+                <li class="activities-list-item">* Sudden Horn</li>
+                <li class="activities-list-item">* Blowing Passage</li>
+                <li class="activities-list-item">* Tap the Ball</li>
+                <li class="activities-list-item">* Pyramid</li>
+                <li class="activities-list-item">* Running Shirt</li>
+                <li class="activities-list-item">* Cookie Face</li>
+                <li class="activities-list-item">* Dried Leaves Art</li>
+                <li class="activities-list-item">* Painting</li>
+                <li class="activities-list-item">* Muddy Art</li>
+                <li class="activities-list-item">* Cone Ball</li>
+                <li class="activities-list-item">* Zigzag Running</li>
+                <li class="activities-list-item">* Pulling up Cone</li>
+                <li class="activities-list-item">* Kayaing</li>
+                <li class="activities-list-item">* Boating</li>
+                <li class="activities-list-item">* Raft Making</li>
+              </ul>
+            </div>
+
+            <div class="mb-5"></div>
+
+            <!-- ACTIVITIES-LIST -->
+            <div class="activity">
+              <h3>Premium Level:</h3>
+
+              <ul class="activities-list">
+                <li class="activities-list-item">* Camp Site Setup</li>
+                <li class="activities-list-item">* Nature Indulgence</li>
+                <li class="activities-list-item">* Tripod</li>
+                <li class="activities-list-item">* Water pong</li>
+                <li class="activities-list-item">* Flying Fox</li>
+                <li class="activities-list-item">* Capture the flags</li>
+                <li class="activities-list-item">* Tic Tack Toe</li>
+                <li class="activities-list-item">* Big Foot</li>
+                <li class="activities-list-item">* Human vehicle</li>
+                <li class="activities-list-item">* Nature hike</li>
+                <li class="activities-list-item">* Boating</li>
+                <li class="activities-list-item">* Tug of War</li>
+                <li class="activities-list-item">* Identification</li>
+                <li class="activities-list-item">
+                  * Hill Trekking (circuit trail)
+                </li>
+                <li class="activities-list-item">* Zip Lining</li>
+                <li class="activities-list-item">* River pass (version 1)</li>
+                <li class="activities-list-item">* Synchro Footing</li>
+                <li class="activities-list-item">
+                  * Capture the Flags (version 1)
+                </li>
+                <li class="activities-list-item">* Ring Pass • Cycling</li>
+                <li class="activities-list-item">* Obstacle Course</li>
+                <li class="activities-list-item">* Turn Over</li>
+                <li class="activities-list-item">* Letter Post</li>
+                <li class="activities-list-item">* Cat and Mouse Race</li>
+                <li class="activities-list-item">* Marble Pass</li>
+                <li class="activities-list-item">* Liquid Pass (version 1)</li>
+                <li class="activities-list-item">
+                  * Treasure Hunt (version 1)
+                </li>
+                <li class="activities-list-item">* Paddle Boating</li>
+                <li class="activities-list-item">* Screw Driver (version 1)</li>
+                <li class="activities-list-item">* Spin Goal</li>
+                <li class="activities-list-item">* Belt Race</li>
+                <li class="activities-list-item">* Balloon Race (queue)</li>
+                <li class="activities-list-item">
+                  * Balloon Burst (version 1)
+                </li>
+                <li class="activities-list-item">
+                  * Balloon Burst (version 2)
+                </li>
+                <li class="activities-list-item">
+                  * Tanis Ball/Balloon Race (pair leaves)
+                </li>
+                <li class="activities-list-item">* Tic Tack Toe (version 1)</li>
+                <li class="activities-list-item">
+                  * Tic Tack Toe (table & water)
+                </li>
+                <li class="activities-list-item">* Tug of War (version 1)</li>
+                <li class="activities-list-item">* Screw Driver</li>
+                <li class="activities-list-item">* Archery (paid)</li>
+                <li class="activities-list-item">* Human Pass (version 1)</li>
+                <li class="activities-list-item">* Human Knot (version 1)</li>
+                <li class="activities-list-item">* Signe Pass</li>
+                <li class="activities-list-item">* Slippery Climbing</li>
+                <li class="activities-list-item">* Sudden Horn</li>
+                <li class="activities-list-item">* Blowing Passage</li>
+                <li class="activities-list-item">* Tap the Ball</li>
+                <li class="activities-list-item">* Pyramid</li>
+                <li class="activities-list-item">* Running Shirt</li>
+                <li class="activities-list-item">* Cookie Face</li>
+                <li class="activities-list-item">* Dried Leaves Art</li>
+                <li class="activities-list-item">* Painting</li>
+                <li class="activities-list-item">* Muddy Art</li>
+                <li class="activities-list-item">* Cone Ball</li>
+                <li class="activities-list-item">* Zigzag Running</li>
+                <li class="activities-list-item">* Pulling up Cone</li>
+                <li class="activities-list-item">* Kayaing</li>
+                <li class="activities-list-item">* Boating</li>
+                <li class="activities-list-item">* Raft Making</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mb-5"></div>
+
+          <!-- ACTIVITIES-SLIDER -->
+          <div class="col-12">
+            <div class="swiper activitiesSlider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="cardroom">
+                    <!-- IMAGE -->
+                    <figure class="cardroom-thumbnail">
+                      <img
+                        src="assets/images/rooms/room-1.jpeg"
+                        class="cardroom-thumbnail-img"
+                        alt="ROOM-1-THUMBNAIL"
+                      />
+
+                      <!-- OVERLAY -->
+                      <div class="roomoverlay"></div>
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="cardroom">
+                    <!-- IFRAME -->
+                    <figure class="cardroom-thumbnail">
+                      <iframe
+                        width="340"
+                        height="260"
+                        src="https://www.youtube.com/embed/J0OqUjrd_d8"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                      ></iframe>
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="cardroom">
+                    <!-- IMAGE -->
+                    <figure class="cardroom-thumbnail">
+                      <img
+                        src="assets/images/rooms/room-2.jpg"
+                        class="cardroom-thumbnail-img"
+                        alt="ROOM-2-THUMBNAIL"
+                      />
+
+                      <!-- OVERLAY -->
+                      <div class="roomoverlay"></div>
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="cardroom">
+                    <!-- IMAGE -->
+                    <figure class="cardroom-thumbnail">
+                      <img
+                        src="assets/images/rooms/room-3.jpeg"
+                        class="cardroom-thumbnail-img"
+                        alt="ROOM-3-THUMBNAIL"
+                      />
+
+                      <!-- OVERLAY -->
+                      <div class="roomoverlay"></div>
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="cardroom">
+                    <!-- IFRAME -->
+                    <iframe
+                      width="340"
+                      height="260"
+                      src="https://www.youtube.com/embed/C4iWtxv9Qik"
+                      title="বান্দরবানের সেরা 2টি লাক্সারি রিসোর্ট। Luxury Resorts in Bandarban। #luxury #resort"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="cardroom">
+                    <!-- IMAGE -->
+                    <figure class="cardroom-thumbnail">
+                      <img
+                        src="assets/images/rooms/room-4.jpg"
+                        class="cardroom-thumbnail-img"
+                        alt="ROOM-4-THUMBNAIL"
+                      />
+
+                      <!-- OVERLAY -->
+                      <div class="roomoverlay"></div>
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="cardroom">
+                    <!-- IMAGE -->
+                    <figure class="cardroom-thumbnail">
+                      <img
+                        src="assets/images/rooms/room-5.jpeg"
+                        class="cardroom-thumbnail-img"
+                        alt="ROOM-5-THUMBNAIL"
+                      />
+
+                      <!-- OVERLAY -->
+                      <div class="roomoverlay"></div>
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="cardroom">
+                    <figure class="cardroom-thumbnail">
+                      <!-- IMAGE -->
+                      <img
+                        src="assets/images/rooms/room-6.jpg"
+                        class="cardroom-thumbnail-img"
+                        alt="ROOM-6-THUMBNAIL"
+                      />
+
+                      <!-- OVERLAY -->
+                      <div class="roomoverlay"></div>
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="cardroom">
+                    <!-- IMAGE -->
+                    <figure class="cardroom-thumbnail">
+                      <img
+                        src="assets/images/rooms/room-7.jpeg"
+                        class="cardroom-thumbnail-img"
+                        alt="ROOM-7-THUMBNAIL"
+                      />
+
+                      <!-- OVERLAY -->
+                      <div class="roomoverlay"></div>
+                    </figure>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="cardroom">
+                    <!-- IMAGE -->
+                    <figure class="cardroom-thumbnail">
+                      <img
+                        src="assets/images/rooms/room-8.jpeg"
+                        class="cardroom-thumbnail-img"
+                        alt="ROOM-8-THUMBNAIL"
+                      />
+
+                      <!-- OVERLAY -->
+                      <div class="roomoverlay"></div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sliderbuttons">
+                <button type="button" class="swiper-button-prev">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button type="button" class="swiper-button-next">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -734,6 +1088,10 @@
 
     <!-- HEADER-JS -->
     <script src="assets/js/header.js"></script>
+
+    <!-- SWIPER-JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/activities-slider.js"></script>
 
     <!-- SUBSCRIPTION-FORM-JS -->
     <script src="assets/js/subscription-form.js"></script>
