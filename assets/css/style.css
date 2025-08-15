@@ -492,6 +492,7 @@ button,
   border: solid var(--border-width);
   font: 500 var(--s15) / 1 var(--font-book);
   padding: var(--s16) var(--s30) var(--s14);
+  min-width: var(--s180);
   height: var(--s48);
   text-transform: uppercase;
   text-align: center;
@@ -550,6 +551,10 @@ button,
 
 .text-theme {
   color: var(--theme-primary);
+}
+
+.fs-small {
+  font-size: var(--s13);
 }
 
 /* LANGUAGE-SELECT */

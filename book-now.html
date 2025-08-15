@@ -302,74 +302,93 @@
         <h2 class="text-center mb-4 h3-small">
           Choose Date and Number of Participants
         </h2>
+      </div>
 
-        <!-- BOOK-FORM-START -->
-        <form id="bookform" class="contact-form bookform" novalidate>
-          <div class="inner-input-wrapper">
-            <label for="selectdate" class="contact-label"> Select Date </label>
-            <input
-              type="text"
-              name="selectdate"
-              id="selectdate"
-              class="datepicker form-control"
-              placeholder="Select Date"
-              autocomplete="off"
-            />
-          </div>
+      <div class="booking-area mb-5">
+        <!-- ✅ Booking Form -->
+        <form class="booking-form" novalidate>
+          <div class="booking-grid">
+            <!-- SELECT-PACKAGE -->
+            <div class="form-group">
+              <label for="packages">Packages</label>
+              <select class="form-select" id="packages" autocomplete="off">
+                <option value="Select Package" selected disabled>
+                  Select Package
+                </option>
+                <option value="Day Long">Day Long</option>
+                <option value="Evening">Evening</option>
+                <option value="Stay Night Package">Stay Night Package</option>
+              </select>
+            </div>
 
-          <div class="inner-input-wrapper">
-            <label for="adult" class="contact-label"> Adult </label>
-            <input
-              type="number"
-              name="adult"
-              id="adult"
-              class="form-control"
-              placeholder="1"
-              autocomplete="off"
-            />
-          </div>
+            <!-- CHECK-IN -->
+            <div class="form-group form-block d-none" data-block="checkin">
+              <label for="check-in">Check-in</label>
+              <input
+                type="text"
+                name="check-in"
+                id="check-in"
+                class="datepicker form-control"
+                placeholder="Select Date"
+                autocomplete="off"
+              />
+            </div>
 
-          <div class="inner-input-wrapper">
-            <label for="children" class="contact-label"> Children </label>
-            <input
-              type="number"
-              name="children"
-              id="children"
-              class="form-control"
-              placeholder="0"
-              autocomplete="off"
-            />
-          </div>
+            <!-- CHECK-OUT -->
+            <div class="form-group form-block d-none" data-block="checkout">
+              <label for="check-out">Check-out</label>
+              <input
+                type="text"
+                name="check-out"
+                id="check-out"
+                class="datepicker form-control"
+                placeholder="Select Date"
+                autocomplete="off"
+              />
+            </div>
 
-          <div class="inner-input-wrapper">
-            <label for="kids" class="contact-label"> Kids </label>
-            <input
-              type="number"
-              name="kids"
-              id="kids"
-              class="form-control"
-              placeholder="0"
-              autocomplete="off"
-            />
-          </div>
+            <!-- ADULTS -->
+            <div class="form-group form-block d-none" data-block="adults">
+              <label for="adult-guests">Adults</label>
+              <input
+                type="number"
+                class="form-control"
+                id="adult-guests"
+                placeholder="1"
+                autocomplete="off"
+              />
+            </div>
 
-          <div class="inner-input-wrapper">
-            <label for="driver" class="contact-label"> Driver Or Others </label>
-            <input
-              type="number"
-              name="driver"
-              id="driver"
-              class="form-control"
-              placeholder="0"
-              autocomplete="off"
-            />
-          </div>
+            <!-- CHILDREN -->
+            <div class="form-group form-block d-none" data-block="children">
+              <label for="children-guests">Children</label>
+              <input
+                type="number"
+                class="form-control"
+                id="children-guests"
+                placeholder="0"
+                autocomplete="off"
+              />
+            </div>
 
-          <!-- SUBMIT CTA -->
-          <div class="submit-block mt-4 mt-md-0">
-            <button type="submit" class="btn-cta btn-primary w-100">
-              Check Availability
-            </button>
+            <!-- OTHERS -->
+            <div class="form-group form-block d-none" data-block="others">
+              <label for="other-guests">Others</label>
+              <input
+                type="number"
+                class="form-control"
+                id="other-guests"
+                placeholder="0"
+                autocomplete="off"
+              />
+            </div>
+
+            <!-- SUBMIT CTA -->
+            <div class="submit-block d-none">
+              <button type="submit" class="btn-cta btn-primary w-100 fs-small">
+                Check Availability
+              </button>
+            </div>
           </div>
         </form>
       </div>
@@ -797,7 +816,7 @@
     <script src="assets/js/datepicker.js"></script>
 
     <!-- BOOK-NOW-FORM-JS -->
-    <script src="assets/js/booknow-form.js"></script>
+    <script src="assets/js/booking-form.js"></script>
 
     <!-- SUBSCRIPTION-FORM-JS -->
     <script src="assets/js/subscription-form.js"></script>
