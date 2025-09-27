@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const formBlocks = document.querySelectorAll(".form-block");
   // Submit button container block
   const submitBlock = document.querySelector(".submit-block");
-  // Check-out date block (only shown for certain packages)
+  // Check-out date block (only shown for Night Stay)
   const checkOutBlock = document.querySelector('[data-block="checkout"]');
 
   /**
@@ -57,28 +57,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const childrenBlock = document.querySelector('[data-block="children"]');
     const othersBlock = document.querySelector('[data-block="others"]');
 
-    // Always show check-in, adults, children, and others blocks
+    // All packages: always show check-in, adults, children, and others blocks
     checkinBlock.classList.remove("d-none");
     adultsBlock.classList.remove("d-none");
     childrenBlock.classList.remove("d-none");
     othersBlock.classList.remove("d-none");
 
-    // For "Day Long" and "Evening" packages:
-    // - Hide check-out block
-    // - Show submit button
-    if (selected === "Day Long" || selected === "Evening") {
+    // Show check-out only for "Night Stay" package
+    if (selected === "Night Stay") {
+      checkOutBlock.classList.remove("d-none");
+    } else {
       checkOutBlock.classList.add("d-none");
-      checkOut.value = ""; // Clear check-out input value
-      submitBlock.classList.remove("d-none");
+      checkOut.value = ""; // Clear check-out input if hidden
     }
 
-    // For "Stay Night Package":
-    // - Show check-out block
-    // - Show submit button
-    if (selected === "Stay Night Package") {
-      checkOutBlock.classList.remove("d-none");
-      submitBlock.classList.remove("d-none");
-    }
+    // Always show submit button after selecting a valid package
+    submitBlock.classList.remove("d-none");
   });
 
   /**
@@ -111,8 +105,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return; // Stop submission
     }
 
-    // Validate check-out date if "Stay Night Package" selected
-    if (selectedPackage === "Stay Night Package" && !checkOutVal) {
+    // Validate check-out date only if "Night Stay" package selected
+    if (selectedPackage === "Night Stay" && !checkOutVal) {
       showToast("toastCheckOut");
       return;
     }
@@ -126,9 +120,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // All validations passed — show success toast
     showToast("toastSuccess");
 
-    // Redirect after a 2 second delay
+    // Redirect page based on selected package
+    const redirectPage =
+      selectedPackage === "Night Stay" ? "rooms.php" : "booking-info.php";
+
     setTimeout(() => {
-      window.location.href = "available-rooms.html";
+      window.location.href = redirectPage;
     }, 2000);
   });
 });
