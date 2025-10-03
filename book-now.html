@@ -308,21 +308,22 @@
         <!-- ✅ Booking Form -->
         <form class="booking-form" novalidate>
           <div class="booking-grid">
-            <!-- SELECT-PACKAGE -->
+            <!-- SELECT-ROOMS -->
             <div class="form-group">
-              <label for="packages">Packages</label>
-              <select class="form-select" id="packages" autocomplete="off">
-                <option value="Select Package" selected disabled>
-                  Select Package
+              <label for="packages">Rooms</label>
+              <select class="form-select" id="rooms" autocomplete="off">
+                <option value="Select Rooms" selected disabled>
+                  Select Rooms
                 </option>
-                <option value="Day Long">Day Long</option>
-                <option value="Evening">Evening</option>
-                <option value="Stay Night Package">Stay Night Package</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
               </select>
             </div>
 
             <!-- CHECK-IN -->
-            <div class="form-group form-block d-none" data-block="checkin">
+            <div class="form-group form-block">
               <label for="check-in">Check-in</label>
               <input
                 type="text"
@@ -335,7 +336,7 @@
             </div>
 
             <!-- CHECK-OUT -->
-            <div class="form-group form-block d-none" data-block="checkout">
+            <div class="form-group form-block">
               <label for="check-out">Check-out</label>
               <input
                 type="text"
@@ -348,7 +349,7 @@
             </div>
 
             <!-- ADULTS -->
-            <div class="form-group form-block d-none" data-block="adults">
+            <div class="form-group form-block">
               <label for="adult-guests">Adults</label>
               <input
                 type="number"
@@ -360,7 +361,7 @@
             </div>
 
             <!-- CHILDREN -->
-            <div class="form-group form-block d-none" data-block="children">
+            <div class="form-group form-block">
               <label for="children-guests">Children</label>
               <input
                 type="number"
@@ -372,7 +373,7 @@
             </div>
 
             <!-- OTHERS -->
-            <div class="form-group form-block d-none" data-block="others">
+            <div class="form-group form-block">
               <label for="other-guests">Others</label>
               <input
                 type="number"
@@ -384,7 +385,7 @@
             </div>
 
             <!-- SUBMIT CTA -->
-            <div class="submit-block d-none">
+            <div class="submit-block">
               <button type="submit" class="btn-cta btn-primary w-100 fs-small">
                 Check Availability
               </button>
@@ -814,9 +815,6 @@
     <!-- DATEPICKER-JS -->
     <script src="assets/js/datepicker-full.min.js"></script>
     <script src="assets/js/datepicker.js"></script>
-
-    <!-- BOOK-NOW-FORM-JS -->
-    <script src="assets/js/booking-form.js"></script>
 
     <!-- SUBSCRIPTION-FORM-JS -->
     <script src="assets/js/subscription-form.js"></script>
