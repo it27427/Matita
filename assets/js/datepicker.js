@@ -9,6 +9,14 @@ const getDatePickerTitle = (elem) => {
   return titleText;
 };
 
+// const calendarBtns = document.querySelectorAll(".btn-calendar");
+
+// calendarBtns.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     document.querySelector(".datepicker").focus();
+//   });
+// });
+
 const elems = document.querySelectorAll(".datepicker");
 
 for (const elem of elems) {
@@ -29,3 +37,13 @@ for (const elem of elems) {
   // Set placeholder initially
   elem.placeholder = "Select date";
 }
+
+// When calendar button is clicked, open the datepicker
+document.querySelectorAll(".btn-calendar").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    const input = e.currentTarget
+      .closest(".form-block")
+      .querySelector(".datepicker");
+    input.focus();
+  });
+});

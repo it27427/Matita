@@ -755,6 +755,29 @@ button,
   transition: var(--transition);
 }
 
+.form-block,
+.datepicker.form-control.datepicker-input {
+  position: relative;
+}
+
+/* Calendar icon button */
+.btn-calendar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  color: var(--theme-primary);
+  font-size: 1.125rem;
+  position: absolute;
+  right: 0;
+  top: 70%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Package select specific styling */
 #packages:invalid {
   color: var(--bg-light);
